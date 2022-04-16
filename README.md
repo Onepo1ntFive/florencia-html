@@ -8,6 +8,6 @@
 
 `gulp deploy` for deploy gh pages
 
-#pages
+# pages
 
 -  https://onepo1ntfive.github.io/florencia-html/
