@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="l-wrap">
+        <header class="l-header">
+            <div class="header">
+                <div class="header__inner">
+                    <div class="header__topline">
+                        <p>Заказы, оформленные после 19:00, доставляются на следующий день с 10.00</p>
+                        <div class="header__social">
+                            <a href="#"><img src="./img/yt.svg" alt=""></a>
+                            <a href="#"><img src="./img/whatsapp.svg" alt=""></a>
+                            <a href="#"><img src="./img/vk.svg" alt=""></a>
+                            <a href="#"><img src="./img/viber.svg" alt=""></a>
+                            <a href="#"><img src="./img/telegram.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="header__content">
+                        <div class="header__logo"><a href="/"><img src="./img/florencia-logo.png" alt=""></a></div>
+                        <div class="header__info">
+                            <span>Наш адрес</span>
+                            <p>Смоленск, ул. Глинки 2А</p>
+                            <ins>Бесплатная доставка</ins>
+                        </div>
+                        <div class="header__info">
+                            <span>Whatsapp | Viber | Telegram</span>
+                            <p><a href="tel:+79107859700">+7 (910) 785-97-00</a></p>
+                            <ins><a href="#">Заказать звонок</a></ins>
+                        </div>
+                    </div>
+                    <div class="header__bottomline">
+                        <div class="header__search">
+                            <div class="search">
+                                <form>
+                                    <button></button>
+                                    <input type="text" placeholder="Поиск">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header__menu">
+                            <div class="menu">
+                                <nav class="menu__items">
+                                    <div class="menu__item">
+                                        <span><ins></ins>Каталог</span>
+                                        <div class="menu__submenu">
+                                            <a href="#">Букеты</a>
+                                            <a href="#">Композиции</a>
+                                            <a href="#">Монобукеты</a>
+                                            <a href="#">Фруктовые/сладкие букеты </a>
+                                            <a href="#">Букеты невесты</a>
+                                            <a href="#">Мужские букеты</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu__item">
+                                        <a href="#">Доставка</a>
+                                    </div>
+                                    <div class="menu__item">
+                                        <a href="#">Оплата</a>
+                                    </div>
+                                    <div class="menu__item">
+                                        <a href="#">Контакты</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="header__cart">
+                            <div class="cart-header">
+                                <a href="#">Корзина <span>12</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <section class="l-content"> 
+            <div class="content__wrap">
+                <nav class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <a href="#">Букеты</a>
+                </nav>
+                <div class="content__title">
+                    <h1>Букеты</h1>
+                    <span>94</span>
+                </div>
+                <div class="b-filter">
+                    <div class="filter__inner">
+                        <div class="filter__collapse">
+                            <div class="filter__title js-collapse-title">Сортировка</div>
+                            <div class="filter__content">
+                                <div class="filter__items">
+                                    <div class="filter__item filter__item--radio">
+                                        <div class="b-inputbox b-inputbox--radio">
+                                            <input type="radio" name="radio-1" id="radio-1">
+                                            <label class="inputbox__input" for="radio-1"></label>
+                                            <label class="inputbox__label" for="radio-1">По умолчанию</label>
+                                        </div>
+                                    </div>
+                                    <div class="filter__item filter__item--radio">
+                                        <div class="b-inputbox b-inputbox--radio">
+                                            <input type="radio" name="radio-1" id="radio-2">
+                                            <label class="inputbox__input" for="radio-2"></label>
+                                            <label class="inputbox__label" for="radio-2">По уменьшению цены</label>
+                                        </div>
+                                    </div>
+                                    <div class="filter__item filter__item--radio">
+                                        <div class="b-inputbox b-inputbox--radio">
+                                            <input type="radio" name="radio-1" id="radio-3">
+                                            <label class="inputbox__input" for="radio-3"></label>
+                                            <label class="inputbox__label" for="radio-3">По возрастанию цены</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__collapse active">
+                            <div class="filter__title js-collapse-title">Цена</div>
+                            <div class="filter__content">
+                                <div class="filter__range js-range">
+                                    <input type="text" class="js-range-min"><span>&mdash;</span><input type="text" class="js-range-max">
+                                    <div class="filter__range-slider">
+                                        <div class="js-range-slider"></div>
+                                    </div>
+                                </div>
+                                <div class="filter__btn">
+                                    <a href="#">Применить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__collapse">
+                            <div class="filter__title js-collapse-title">Категория</div>
+                            <div class="filter__content">
+                                <div class="filter__items">
+                                    <div class="filter__item filter__item--checkbox">
+                                        <div class="b-inputbox b-inputbox--checkbox">
+                                            <input type="checkbox" name="checkbox-1" id="checkbox-1">
+                                            <label class="inputbox__input" for="checkbox-1"></label>
+                                            <label class="inputbox__label" for="checkbox-1">Категория</label>
+                                        </div>
+                                    </div>
+                                    <div class="filter__item filter__item--checkbox">
+                                        <div class="b-inputbox b-inputbox--checkbox">
+                                            <input type="checkbox" name="checkbox-2" id="checkbox-2">
+                                            <label class="inputbox__input" for="checkbox-2"></label>
+                                            <label class="inputbox__label" for="checkbox-2">Категория</label>
+                                        </div>
+                                    </div>
+                                    <div class="filter__item filter__item--checkbox">
+                                        <div class="b-inputbox b-inputbox--checkbox">
+                                            <input type="checkbox" name="checkbox-3" id="checkbox-3">
+                                            <label class="inputbox__input" for="checkbox-3"></label>
+                                            <label class="inputbox__label" for="checkbox-3">Категория</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__collapse">
+                            <div class="filter__title js-collapse-title">Состав</div>
+                            <div class="filter__content">
+                                <div class="filter__items">
+                                    <div class="filter__item filter__item--checkbox">
+                                        <div class="b-inputbox b-inputbox--checkbox">
+                                            <input type="checkbox" name="checkbox-4" id="checkbox-4">
+                                            <label class="inputbox__input" for="checkbox-4"></label>
+                                            <label class="inputbox__label" for="checkbox-4">Состав</label>
+                                        </div>
+                                    </div>
+                                    <div class="filter__item filter__item--checkbox">
+                                        <div class="b-inputbox b-inputbox--checkbox">
+                                            <input type="checkbox" name="checkbox-5" id="checkbox-5">
+                                            <label class="inputbox__input" for="checkbox-5"></label>
+                                            <label class="inputbox__label" for="checkbox-5">Состав</label>
+                                        </div>
+                                    </div>
+                                    <div class="filter__item filter__item--checkbox">
+                                        <div class="b-inputbox b-inputbox--checkbox">
+                                            <input type="checkbox" name="checkbox-6" id="checkbox-6">
+                                            <label class="inputbox__input" for="checkbox-6"></label>
+                                            <label class="inputbox__label" for="checkbox-6">Состав</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="b-minifilter">
+                    <span>По популярности <ins></ins></span>
+                    <span>Мужские букеты <ins></ins></span>
+                    <span>1 500 – 6 000 руб. <ins></ins></span>
+                    <span>Розы <ins></ins></span>
+                </div>
+                <div class="catalog catalog--list">
+                    <div class="catalog__items">
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__item">
+                            <div class="catalog__pic">
+                                <a href="#">
+                                    <picture>
+                                        <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                        <source srcset='./img/catalog-pic.png' type='image/png'>
+                                        <img src='./img/catalog-pic.png' alt=''>
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="catalog__content">
+                                <div class="catalog__price"> 4 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__oldprice"> 5 900 <span class="b-ruble-font">Р</span></div>
+                                <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="catalog__btns">
+                                    <div class="catalog__tocart">
+                                        <button class="b-button">В корзину</button>
+                                    </div>
+                                    <div class="catalog__quickcart">
+                                        <a href="#">Быстрая покупка</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more">
+                    <a class="b-button b-button--gray b-button--mw460" href="#">Показать ещё</a>
+                </div>
+                <div class="pagination">
+                    <a class="pagination__prev" href="#"></a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a class="active" href="#">4</a>
+                    <a href="#">5</a>
+                    <span>...</span>
+                    <a href="#">9</a>
+                    <a class="pagination__next" href="#"></a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="l-footer">
+            <pre>.footer</pre>
+        </section>
+    </div>
+    
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
