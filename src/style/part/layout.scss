@@ -1,6 +1,6 @@
 .l-wrap {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     width: 100%;
     min-height: 100%;
     position: relative;
@@ -17,19 +17,26 @@
 }
 /*----------*/
 .l-content {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
     flex: 1 auto;
-
-    @media (min-width: $breakpoint-tablet) {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
 
     .content__wrap {
         margin: auto;
-        max-width: 1280px;
+        max-width: 142rem;
         width: 100%;
+    }
+    .content__title {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: baseline;
+
+        span {
+            padding-left: 0.5rem;
+            font-family: $font-family-oswald;
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: $color-font-gray;
+        }
     }
 }
 /*----------*/

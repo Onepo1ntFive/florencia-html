@@ -10,4 +10,5 @@
 
 # pages
 
--  https://onepo1ntfive.github.io/florencia-html/
+-  [Index|https://onepo1ntfive.github.io/florencia-html/]
+-  [Catalog page|https://onepo1ntfive.github.io/florencia-html/catalog-page.html]

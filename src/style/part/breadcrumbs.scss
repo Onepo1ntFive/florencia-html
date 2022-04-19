@@ -1,0 +1,37 @@
+.breadcrumbs {
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+
+    a {
+        position: relative;
+        margin-right: 0.5rem;
+        padding-left: 1rem;
+
+        &:link,
+        &:visited {
+            font-size: 1.2rem;
+            color: $color-font-gray;
+        }
+        &:hover {
+            color: $color-green;
+
+            &::before {
+                color: $color-font-gray;
+            }
+        }
+        &::before {
+            content: '/';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &:first-child {
+            padding-left: 0;
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

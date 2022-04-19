@@ -1,9 +1,16 @@
-@import "./part/_var";
-@import "./part/_reset";
-@import "./part/_fonts";
+@import './part/_var';
+@import './part/_reset';
+@import './part/_fonts';
 
-@import "./part/app";
-@import "./part/layout";
+@import './libs/nouislider';
 
-@import "./part/header";
-@import "./part/footer";
+@import './part/app';
+@import './part/layout';
+
+@import './part/_header';
+@import './part/_footer';
+
+@import './part/breadcrumbs';
+@import './part/paginations';
+@import './part/catalog';
+@import './part/filter';

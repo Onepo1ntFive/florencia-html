@@ -1,0 +1,298 @@
+/*----------*/
+.b-filter {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $color-font-10p;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+
+    .filter__inner {
+        flex: 1 auto;
+
+        @media (min-width: $breakpoint-tablet) {
+            display: flex;
+            flex-flow: row wrap;
+        }
+    }
+    .filter__collapse {
+        padding: 0;
+        position: relative;
+        margin-bottom: 1.5rem;
+        margin-right: 1em;
+
+        @media (min-width: $breakpoint-desktop) {
+            padding: 1rem 0;
+            margin-bottom: 0;
+        }
+
+        &:hover .filter__title {
+            background-color: $color-gray;
+
+            &::before {
+                @media (min-width: $breakpoint-desktop) {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &:hover .filter__content {
+            @media (min-width: $breakpoint-desktop) {
+                opacity: 1;
+                top: calc(100% + 1rem);
+                pointer-events: all;
+            }
+        }
+
+        &.active {
+            .filter__title {
+                background-color: $color-green;
+                color: $color-white;
+
+                &::before {
+                    background-image: url('../img/icon-chevron-w.svg');
+                }
+            }
+        }
+    }
+    .filter__title {
+        position: relative;
+        cursor: pointer;
+        padding: 1rem 4.5rem 1rem 2rem;
+        background-color: $color-lightgray;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        color: $color-font;
+
+        &::before {
+            content: '';
+            margin-top: -1.2rem;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            width: 2.4rem;
+            height: 2.4rem;
+            transition-property: transform, opacity, background;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            background: url('../img/icon-chevron.svg') 50% 50% no-repeat;
+            background-size: contain;
+        }
+
+        &.inactive {
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .filter__content {
+        background-color: $color-white;
+        pointer-events: none;
+        transition-property: opacity, top;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        padding: 2rem;
+        z-index: 3;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 5px 30px rgba(41, 45, 50, 0.05);
+        display: none;
+
+        @media (min-width: $breakpoint-tablet) {
+            position: absolute;
+            left: 0;
+            top: calc(100% + 3rem);
+            width: 26rem;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            opacity: 0;
+
+            display: block;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            width: 100%;
+            height: 3rem;
+        }
+    }
+
+    .filter__btn {
+        padding-top: 1.5rem;
+        border-top: 1px solid $color-font-10p;
+        text-align: right;
+    }
+
+    .filter__range {
+        padding-bottom: 1.5rem;
+
+        input {
+            padding: 0.7rem 1rem;
+            border: 1px solid $color-gray2;
+            border-radius: 0.5rem;
+            display: inline-block;
+            vertical-align: middle;
+            width: 45%;
+            font-size: 1.5rem;
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            width: 10%;
+        }
+    }
+
+    .filter__range-slider {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .filter__items {
+        padding-bottom: 1.5rem;
+    }
+
+    .filter__item {
+        margin-bottom: 1rem;
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            pointer-events: none;
+
+            &:checked ~ .filter__input {
+                border-color: $color-green;
+            }
+            &:checked ~ .filter__input::before {
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            .filter__input {
+                border-color: $color-green;
+            }
+        }
+
+        &--radio {
+            .filter__input {
+                border-radius: 100rem;
+
+                &::before {
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    background: url('../img/circle.svg') 50% 50% no-repeat;
+                }
+            }
+        }
+        &--checkbox {
+            .filter__input {
+                border-radius: 0.5rem;
+
+                &::before {
+                    width: 1.1rem;
+                    height: 0.8rem;
+                    background: url('../img/check.svg') 50% 50% no-repeat;
+                }
+            }
+        }
+    }
+}
+/*----------*/
+.noUi-target {
+    border: 0;
+    box-shadow: none;
+}
+.noUi-connect {
+    background: $color-green;
+}
+.noUi-horizontal {
+    height: 4px;
+    background-color: $color-gray2;
+
+    .noUi-handle {
+        top: -0.8rem;
+        right: -1rem;
+        width: 2rem;
+        height: 2rem;
+        border: 0.5rem solid $color-green;
+        border-radius: 100rem;
+        cursor: pointer;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
+/*----------*/
+.b-minifilter {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 5rem;
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    & > span {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 3rem;
+        margin-right: 1.5rem;
+        position: relative;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $color-font;
+        transition: color 0.2s ease-in-out;
+
+        ins {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 2.4rem;
+            height: 2.4rem;
+            transition: opacity 0.2s ease-in-out;
+            background: url('../img/cross.svg');
+        }
+    }
+    & > span:hover {
+        text-decoration: none;
+
+        ins {
+            opacity: 0.75;
+        }
+    }
+    .minifilter__reset {
+        img {
+            margin-left: 1rem;
+            display: inline-block;
+            vertical-align: middle;
+            transition: transform 0.2s ease-in-out;
+        }
+        span {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: $color-font-gray;
+
+            &:hover img {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

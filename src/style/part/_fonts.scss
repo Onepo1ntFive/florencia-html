@@ -5,7 +5,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Oswald';
     src: url('../../fonts/Oswald/Oswald-Light.woff') format('woff');
@@ -13,7 +12,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Oswald';
     src: url('../../fonts/Oswald/Oswald-SemiBold.woff') format('woff');
@@ -21,7 +19,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Oswald';
     src: url('../../fonts/Oswald/Oswald-Medium.woff') format('woff');
@@ -29,7 +26,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Oswald';
     src: url('../../fonts/Oswald/Oswald-Bold.woff') format('woff');
@@ -37,7 +33,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Oswald';
     src: url('../../fonts/Oswald/Oswald-ExtraLight.woff') format('woff');
@@ -45,7 +40,7 @@
     font-style: normal;
     font-display: swap;
 }
-// 
+//
 @font-face {
     font-family: 'Inter';
     src: url('../../fonts/Inter/Inter-ExtraBold.woff2') format('woff2');
@@ -53,7 +48,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../../fonts/Inter/Inter-Black.woff2') format('woff2');
@@ -61,7 +55,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../../fonts/Inter/Inter-Bold.woff2') format('woff2');
@@ -69,7 +62,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../../fonts/Inter/Inter-Light.woff2') format('woff2');
@@ -77,7 +69,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../../fonts/Inter/Inter-Thin.woff2') format('woff2');
@@ -85,7 +76,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../../fonts/Inter/Inter-Medium.woff2') format('woff2');
@@ -93,7 +83,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../../fonts/Inter/Inter-Regular.woff2') format('woff2');
@@ -101,7 +90,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../../fonts/Inter/Inter-ExtraLight.woff2') format('woff2');
@@ -109,7 +97,6 @@
     font-style: normal;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'Inter';
     src: url('../../fonts/Inter/Inter-SemiBold.woff2') format('woff2');
@@ -117,4 +104,28 @@
     font-style: normal;
     font-display: swap;
 }
-
+//
+@font-face {
+    font-family: 'ALSRubl';
+    src: url('../fonts/alsrubl/alsrubl-arial-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ALSRubl';
+    src: url('../fonts/alsrubl/alsrubl-arial-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'ALSRubl';
+    src: url('../fonts/alsrubl/alsrubl-arial-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ALSRubl';
+    src: url('../fonts/alsrubl/alsrubl-arial-bolditalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
