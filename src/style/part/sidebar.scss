@@ -213,6 +213,7 @@
                 transform: translateY(-50%);
                 width: 2.4rem;
                 height: 2rem;
+                pointer-events: none;
                 &::before,
                 &::after {
                     content: '';
