@@ -2952,5 +2952,59 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
     });
   }
 })();
+"use strict";
+
+(function () {
+  var windowWidth = window.innerWidth;
+  var showSidebarBtns = document.querySelectorAll('.js-sidebar-show');
+  var hideSidebarBtns = document.querySelectorAll('.js-sidebar-hide');
+  var body = document.querySelector('body');
+  var clickedEl = null;
+  Array.prototype.forEach.call(showSidebarBtns, function (el, i) {
+    el.addEventListener('click', function (event) {
+      event.preventDefault();
+      clickedEl = el;
+      showSidebar();
+    });
+  });
+  Array.prototype.forEach.call(hideSidebarBtns, function (el, i) {
+    el.addEventListener('click', function (event) {
+      event.preventDefault();
+      hideSidebar();
+    });
+  });
+  var sidebar = document.querySelector('.js-sidebar');
+  var sidebarBg = document.querySelector('.js-sidebar-bg');
+
+  function showSidebar() {
+    windowWidth = window.innerWidth;
+
+    if (windowWidth < 1200) {
+      sidebar.classList.add('active');
+      sidebarBg.classList.add('active');
+      clickedEl.classList.add('active');
+      body.classList.add('ov-h');
+    }
+  }
+
+  function hideSidebar() {
+    sidebar.classList.remove('active');
+    sidebarBg.classList.remove('active');
+    clickedEl.classList.remove('active');
+    body.classList.remove('ov-h');
+  }
+
+  if (document.querySelector('.js-menu-collapse')) {
+    var menuCollapseBtns = document.querySelectorAll('.js-menu-collapse');
+    var menuCollapseContent = null;
+    Array.prototype.forEach.call(menuCollapseBtns, function (menuCollapseBtn, i) {
+      menuCollapseBtn.addEventListener('click', function (event) {
+        menuCollapseContent = event.target.nextElementSibling;
+        menuCollapseBtn.classList.toggle('active');
+        slideToggle(menuCollapseContent);
+      });
+    });
+  }
+})();
 'use strict';
 //# sourceMappingURL=maps/main.js.map
