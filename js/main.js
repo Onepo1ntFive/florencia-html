@@ -2901,7 +2901,22 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 });
 "use strict";
 
-(function () {// ready
+(function () {
+  // footer menu
+  if (document.querySelector('.js-footer-menu-title')) {
+    var thisItem = null;
+    var thisContent = null;
+    var footerMenuTitles = document.querySelectorAll('.js-footer-menu-title');
+    Array.prototype.forEach.call(footerMenuTitles, function (footerMenuTitle) {
+      footerMenuTitle.addEventListener('click', function (event) {
+        event.preventDefault();
+        thisItem = event.target;
+        thisContent = thisItem.nextElementSibling;
+        thisItem.classList.toggle('active');
+        slideToggle(thisContent);
+      });
+    });
+  }
 })();
 "use strict";
 
