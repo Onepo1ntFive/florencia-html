@@ -87,7 +87,6 @@
 
     .filter__content {
         background-color: $color-white;
-        pointer-events: none;
         transition-property: opacity, top;
         transition-duration: 0.2s;
         transition-timing-function: ease-in-out;
@@ -106,7 +105,7 @@
         }
         @media (min-width: $breakpoint-desktop) {
             opacity: 0;
-
+            pointer-events: none;
             display: block;
         }
 

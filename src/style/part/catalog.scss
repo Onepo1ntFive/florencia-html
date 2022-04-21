@@ -52,6 +52,8 @@ $catalogClass: '.catalog';
         }
     }
     &__quickcart {
+        line-height: 1;
+
         a {
             &:link,
             &:visited {
@@ -112,6 +114,9 @@ $catalogClass: '.catalog';
             text-align: center;
         }
         &__btns {
+            width: 100%;
+            margin-left: -0.5rem;
+            margin-right: -0.5rem;
             display: flex;
             flex-flow: row wrap;
             align-items: center;
@@ -119,17 +124,25 @@ $catalogClass: '.catalog';
         }
         &__tocart,
         &__quickcart {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
             text-align: center;
+        }
+        &__tocart {
+            width: 100%;
+            max-width: 15rem;
 
             @media (min-width: $breakpoint-desktop) {
                 width: 50%;
             }
         }
         &__quickcart {
+            width: 100%;
             padding-top: 1rem;
 
             @media (min-width: $breakpoint-desktop) {
-                padding: 0;
+                width: 50%;
+                padding-top: 0;
             }
         }
     }

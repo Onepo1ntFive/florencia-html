@@ -1,0 +1,67 @@
+.subscrie-form {
+    margin-bottom: 5rem;
+    padding: 2.5rem 2rem;
+    border-radius: 0.5rem;
+    background: url('../img/subs-bg.jpg') 0 50% no-repeat;
+    background-size: cover;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 7rem;
+        padding: 4rem 5rem;
+        background-size: auto;
+    }
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 11rem;
+        padding: 4rem 8rem;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 62rem;
+        text-align: center;
+
+        p {
+            margin: 0;
+            padding-bottom: 1.5rem;
+        }
+    }
+    &__title {
+        padding-bottom: 1rem;
+        font-weight: 500;
+        font-size: 3rem;
+        font-family: $font-family-oswald;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+    &__form {
+        margin: auto;
+        width: 100%;
+        max-width: 52rem;
+        padding: 0.3rem;
+        display: flex;
+        flex-flow: row nowrap;
+        border: 1px solid $color-font-10p;
+        border-radius: 0.6rem;
+        background-color: $color-white;
+
+        input {
+            padding: 1.5rem 2rem;
+            margin: 0;
+            border: 0;
+            background: none;
+            width: 100%;
+        }
+        button {
+            width: 6rem;
+
+            @media (min-width: $breakpoint-desktop) {
+                width: 15rem;
+            }
+        }
+    }
+}

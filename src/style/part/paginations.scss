@@ -3,6 +3,18 @@ $paginationClass: '.pagination';
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    &:not(&:last-child) {
+        margin-bottom: 5rem;
+
+        @media (min-width: $breakpoint-tablet) {
+            margin-bottom: 7rem;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            margin-bottom: 10rem;
+        }
+    }
+    
     a {
         &:link,
         &:visited {

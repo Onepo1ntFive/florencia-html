@@ -198,12 +198,13 @@ a:hover {
 .b-button,
 a.b-button,
 button.b-button {
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
     border-radius: 0.5rem;
     display: block;
     background: $color-green;
     opacity: 1;
     border: 0;
+    width: 100%;
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
