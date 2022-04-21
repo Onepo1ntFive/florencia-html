@@ -58,10 +58,13 @@ $catalogClass: '.catalog';
                 color: $color-font;
                 font-size: 1.4rem;
                 border-bottom: 1px solid $color-font;
-                transition: border-color 0.2s ease-in-out;
+                transition-property: border-color, color;
+                transition-duration: 0.2s;
+                transition-timing-function: ease-in-out;
             }
             &:hover {
                 border-bottom-color: transparent;
+                color: $color-green;
             }
         }
     }

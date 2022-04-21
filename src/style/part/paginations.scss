@@ -53,10 +53,14 @@ $paginationClass: '.pagination';
         }
     }
     a#{$paginationClass}__prev {
-        margin-right: 10rem;
+        @media (min-width: $breakpoint-tablet) {
+            margin-right: 10rem;
+        }
     }
     a#{$paginationClass}__next {
-        margin-left: 10rem;
+        @media (min-width: $breakpoint-tablet) {
+            margin-left: 10rem;
+        }
         transform: rotate(-180deg);
     }
 }
