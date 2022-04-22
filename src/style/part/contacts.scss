@@ -1,0 +1,84 @@
+.contacts {
+    margin-bottom: 1rem;
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 3rem;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        margin-bottom: 6rem;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__items {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    &__item {
+        margin-bottom: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+
+        @media (min-width: $breakpoint-tablet) {
+            width: 50%;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            width: 25%;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a,
+            span {
+                display: block;
+            }
+            a[href^='tel:'] {
+                color: $color-font;
+
+                &:hover {
+                    color: $color-green;
+                }
+            }
+            span {
+                color: $color-font-gray;
+            }
+        }
+    }
+    &__title {
+        padding-bottom: 1.5rem;
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__social {
+        margin-left: -0.6rem;
+        margin-right: -0.6rem;
+        display: flex;
+        flex-flow: row wrap;
+
+        a {
+            padding-left: 0.6rem;
+            padding-right: 0.6rem;
+
+            img {
+                transition: opacity 0.2s ease-in-out;
+            }
+
+            &:hover {
+                img {
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+}

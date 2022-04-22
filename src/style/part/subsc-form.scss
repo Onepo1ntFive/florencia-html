@@ -59,7 +59,7 @@
         button {
             width: 6rem;
 
-            @media (min-width: $breakpoint-desktop) {
+            @media (min-width: $breakpoint-tablet) {
                 width: 15rem;
             }
         }
