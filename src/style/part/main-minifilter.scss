@@ -1,0 +1,45 @@
+.main-minifilter {
+    padding-bottom: 4rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    text-align: center;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    &__title {
+        padding-bottom: 2.5rem;
+        h2,
+        .h2 {
+            margin: 0;
+        }
+    }
+    &__items {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        overflow: auto;
+    }
+    &__item {
+        padding-left: -0.5rem;
+        padding-right: 0.5rem;
+        a {
+            padding: 0.7rem 2rem;
+            border-radius: 0.5rem;
+            background-color: $color-lightgray2;
+            display: block;
+            font-size: 1.5rem;
+            color: $color-font;
+
+            &:hover {
+                color: $color-green;
+            }
+        }
+        &.active {
+            a {
+                color: $color-green;
+            }
+        }
+    }
+}

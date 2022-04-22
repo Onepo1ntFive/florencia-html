@@ -1,0 +1,78 @@
+.benefits {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 4rem;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        margin-bottom: 8rem;
+    }
+
+    &__title {
+        padding-bottom: 2.5rem;
+        h2,
+        .h2 {
+            margin-bottom: 0;
+        }
+    }
+    &__items {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    &__item {
+        padding-top: 4.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 3rem;
+        width: 100%;
+
+        @media (min-width: $breakpoint-tablet) {
+            padding-top: 7.7rem;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            width: 33.33%;
+        }
+
+        h3,
+        .h3 {
+            text-transform: uppercase;
+        }
+    }
+    &__content {
+        padding: 6rem 2rem 3rem;
+        position: relative;
+        border-radius: 0.5rem;
+        background-color: $color-lightgray2;
+        color: $color-font-gray;
+
+        @media (min-width: $breakpoint-tablet) {
+            padding: 10rem 5rem 3rem;
+        }
+    }
+    &__pic {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 9rem;
+        height: 9rem;
+        border-radius: 100rem;
+        transform: translate(-50%, -50%);
+        background-color: $color-white;
+        text-align: center;
+        line-height: 9rem;
+
+        @media (min-width: $breakpoint-tablet) {
+            width: 15.5rem;
+            height: 15.5rem;
+            line-height: 15.5rem;
+        }
+
+        img {
+            vertical-align: middle;
+            max-width: 65%;
+        }
+    }
+}

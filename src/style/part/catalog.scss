@@ -27,14 +27,23 @@ $catalogClass: '.catalog';
         margin-bottom: 1rem;
         overflow: hidden;
         border-radius: 0.5rem;
+        transition: border-radius 0.2s linear;
+
+        &:hover {
+            border-radius: 100rem;
+            transition-duration: 0.75s;
+        }
 
         img {
             width: 100%;
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.2s linear;
         }
     }
-    &__item:hover &__pic img {
-        transform: scale(1.03);
+    &__item:hover &__pic {
+        img {
+            transition-duration: 0.3s;
+            transform: scale(1.05);
+        }
     }
     &__title {
         padding-bottom: 1rem;
@@ -73,6 +82,19 @@ $catalogClass: '.catalog';
 }
 
 #{$catalogClass}--list {
+    margin-bottom: 2.5rem;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 3rem;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        margin-bottom: 5rem;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     #{$catalogClass} {
         &__items {
             margin-left: -0.7rem;
