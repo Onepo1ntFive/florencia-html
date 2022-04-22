@@ -14,6 +14,12 @@
         font-size: inherit;
     }
 
+    &__inner {
+        margin: auto;
+        width: 100%;
+        max-width: 142rem;
+    }
+
     &__cols {
         margin-left: -1rem;
         margin-right: -1rem;

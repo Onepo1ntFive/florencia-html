@@ -317,6 +317,11 @@
         text-align: center;
         line-height: 2.4rem;
         background: url('../img/search.svg') 50% 50% no-repeat;
+        transition: opacity 0.2s ease-in-out;
+
+        &:hover {
+            opacity: 0.75;
+        }
     }
     input {
         border: 0;
