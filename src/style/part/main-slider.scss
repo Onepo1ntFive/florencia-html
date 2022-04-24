@@ -1,0 +1,124 @@
+/*----------*/
+.b-slider-main {
+    padding-top: 2.5rem;
+    margin-bottom: 3rem;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 4rem;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        padding-top: 5rem;
+        margin-bottom: 7rem;
+    }
+
+    .slider-main__item {
+    }
+    .slider-main__pic {
+        img {
+            width: 100%;
+            border-radius: 0.5rem;
+            min-height: 19rem;
+            object-fit: cover;
+
+            @media (min-width: $breakpoint-tablet) {
+                min-height: 39.5rem;
+            }
+            @media (min-width: $breakpoint-desktop) {
+                min-height: none;
+            }
+        }
+    }
+    .slider-main__content {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        transform: translateY(-50%);
+        width: 100%;
+        max-width: 60%;
+
+        @media (min-width: $breakpoint-tablet) {
+            left: 4rem;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            left: 12rem;
+            max-width: 34%;
+            font-size: 1.8rem;
+        }
+    }
+    .slider-main__title {
+        margin-bottom: 1rem;
+        font-family: $font-family-oswald;
+        font-size: 2.2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+
+        @media (min-width: $breakpoint-tablet) {
+            margin-bottom: 2rem;
+            font-size: 5rem;
+        }
+    }
+    .slider-main__btn {
+        padding-top: 2rem;
+        display: none;
+
+        @media (min-width: $breakpoint-desktop) {
+            display: block;
+        }
+    }
+}
+/*----------*/
+.swiper-container--main {
+    padding-bottom: 2.5rem;
+    overflow: visible;
+
+    @media (min-width: $breakpoint-tablet) {
+        padding-bottom: 4rem;
+    }
+
+    .swiper-slide {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .swiper-slide-visible {
+        opacity: 1;
+    }
+    .swiper-pagination {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .swiper-pagination-bullet {
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+            display: block;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 100rem;
+            background: $color-font-10p;
+            opacity: 0.65;
+            transition-property: opacity, background;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            cursor: pointer;
+
+            @media (min-width: $breakpoint-tablet) {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+        .swiper-pagination-bullet:hover,
+        .swiper-pagination-bullet-active {
+            background: $color-green;
+            opacity: 1;
+        }
+    }
+}

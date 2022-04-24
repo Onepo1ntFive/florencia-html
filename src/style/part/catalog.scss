@@ -115,6 +115,8 @@ $catalogClass: '.catalog';
             padding-bottom: 2.5rem;
             padding-left: 0.7rem;
             padding-right: 0.7rem;
+            display: flex;
+            flex-flow: column nowrap;
             width: 50%;
 
             @media (min-width: $breakpoint-tablet) {
@@ -133,9 +135,13 @@ $catalogClass: '.catalog';
         &__content {
             padding-left: 1.5rem;
             padding-right: 1.5rem;
+            display: flex;
+            flex: 1 auto;
+            flex-flow: column nowrap;
             text-align: center;
         }
         &__btns {
+            margin-top: auto;
             width: 100%;
             margin-left: -0.5rem;
             margin-right: -0.5rem;
@@ -154,7 +160,7 @@ $catalogClass: '.catalog';
             width: 100%;
             max-width: 15rem;
 
-            @media (min-width: $breakpoint-desktop) {
+            @media (min-width: $breakpoint-desktop-extra) {
                 width: 50%;
             }
         }
@@ -162,9 +168,24 @@ $catalogClass: '.catalog';
             width: 100%;
             padding-top: 1rem;
 
-            @media (min-width: $breakpoint-desktop) {
+            @media (min-width: $breakpoint-desktop-extra) {
                 width: 50%;
                 padding-top: 0;
+            }
+        }
+    }
+}
+//
+#{$catalogClass}--mini {
+    #{$catalogClass} {
+        &__item {
+            &:nth-child(n + 7) {
+                display: none;
+            }
+            @media (min-width: $breakpoint-desktop) {
+                &:nth-child(n + 7) {
+                    display: block;
+                }
             }
         }
     }

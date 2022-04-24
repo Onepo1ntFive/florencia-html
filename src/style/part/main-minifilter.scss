@@ -31,6 +31,7 @@
             display: block;
             font-size: 1.5rem;
             color: $color-font;
+            white-space: nowrap;
 
             &:hover {
                 color: $color-green;

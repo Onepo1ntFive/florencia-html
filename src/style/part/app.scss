@@ -273,6 +273,11 @@ button.b-button {
     &:hover {
         opacity: 0.8;
     }
+    &--big {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+
+    }
     &--small {
         padding: 1.1rem;
         font-size: 1.5rem;
@@ -288,7 +293,6 @@ button.b-button {
         color: $color-font;
     }
     &--mw250 {
-        margin: auto;
         max-width: 25rem;
     }
     &--mw460 {
