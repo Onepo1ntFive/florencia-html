@@ -1,0 +1,70 @@
+<div class="b-product">
+    <div class="product__gallery"> 
+        //= ./catalog-product-gallery.html
+    </div>
+    <div class="product__content">
+        <div class="product__stars">
+            <div class="stars">
+                <div class="stars__star stars__star--full"></div>
+                <div class="stars__star stars__star--full"></div>
+                <div class="stars__star stars__star--full"></div>
+                <div class="stars__star stars__star--half"></div>
+                <div class="stars__star stars__star--empty"></div>
+            </div>
+            <a href="#">3 отзыва</a>
+        </div>
+        <div class="product__desc">
+            <h1>Букет #36</h1>
+            <p>Пионовидная роза вайт охара роза квик сэнд диантус роза кустовая хризантема рускус стабилизированный</p>
+        </div>
+        <div class="product__params">
+            <div class="product__param">
+                <span>Бесплатная доставка <img src="./img/param-delivery.svg" alt=""></span>
+            </div>
+            <div class="product__param">
+                <span>Открытка в подарок <img src="./img/param-postcard.svg" alt=""></span>
+            </div>
+            <div class="product__param">
+                <span>Фото перед отправкой <img src="./img/param-photo.svg" alt=""></span>
+            </div>
+            <div class="product__param">
+                <span>Аква ваза <img src="./img/param-vase.svg" alt=""></span>
+            </div>
+        </div>
+        <div class="product__options">
+            <div class="product__option">
+                <div class="b-select">
+                    <div class="select__title">Размер букета</div>
+                    <select>
+                        <option>10 см</option>
+                        <option>20 см</option>
+                        <option>30 см</option>
+                        <option>40 см</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product__option">
+                <div class="b-count">
+                    <span class="count__minus js-count-input-minus"></span>
+                    <div class="count__content">
+                        <ins class="count__title">Количество</ins>
+                        <input class="js-count-input" type="text" value="1" maxlength="3" pattern="[0-9]{1,5}" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                    </div>
+                    <span class="count__plus js-count-input-plus"></span>
+                </div>
+            </div>
+        </div>
+        <div class="product__footer">
+            <div class="product__price">2 500 ₽</div>
+            <div class="product__oldprice">3 500 ₽</div>
+        </div>
+        <div class="product__btns">
+            <div class="product__tocart">
+                <button class="b-button b-button--big">В корзину</button>
+            </div>
+            <div class="product__quickcart">
+                <a href="#">Быстрая покупка</a>
+            </div>
+        </div>
+    </div>
+</div>

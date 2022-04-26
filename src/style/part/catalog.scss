@@ -190,3 +190,74 @@ $catalogClass: '.catalog';
         }
     }
 }
+//
+#{$catalogClass}--carousel {
+    margin-bottom: 5rem;
+
+    @media (min-width: $breakpoint-tablet) {
+        margin-bottom: 7rem;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        margin-bottom: 11rem;
+    }
+    #{$catalogClass} {
+        &__item {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
+
+.swiper-container--catalog {
+    padding-bottom: 3rem;
+
+    @media (min-width: $breakpoint-tablet) {
+        padding-bottom: 5rem;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        padding-bottom: 0;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        @media (min-width: $breakpoint-desktop) {
+            display: none;
+        }
+
+        .swiper-pagination-bullet {
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+            display: block;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 100rem;
+            background: $color-font-10p;
+            opacity: 0.65;
+            transition-property: opacity, background;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            cursor: pointer;
+
+            @media (min-width: $breakpoint-tablet) {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+        .swiper-pagination-bullet:hover,
+        .swiper-pagination-bullet-active {
+            background: $color-green;
+            opacity: 1;
+        }
+    }
+}
