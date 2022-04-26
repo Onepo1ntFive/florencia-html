@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="l-wrap">
+        <header class="l-header">
+            <div class="header">
+                <div class="header__inner">
+                    <div class="header__topline">
+                        <p>Заказы, оформленные после 19:00, доставляются на следующий день с 10.00</p>
+                    </div>
+                    <div class="header__content">
+                        <div class="header__logo"><a href="/"><img src="./img/florencia-logo.png" alt=""></a></div>
+                        <div class="header__info">
+                            <span>Наш адрес</span>
+                            <p>Смоленск, ул. Глинки 2А</p>
+                            <ins>Бесплатная доставка</ins>
+                        </div>
+                        <div class="header__info">
+                            <span>Whatsapp | Viber | Telegram</span>
+                            <p><a href="tel:+79107859700">+7 (910) 785-97-00</a></p>
+                            <ins><a href="#">Заказать звонок</a></ins>
+                        </div>
+                        <div class="header__social">
+                            <a href="#"><img src="./img/yt.svg" alt=""></a>
+                            <a href="#"><img src="./img/whatsapp.svg" alt=""></a>
+                            <a href="#"><img src="./img/vk.svg" alt=""></a>
+                            <a href="#"><img src="./img/viber.svg" alt=""></a>
+                            <a href="#"><img src="./img/telegram.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="header__bottomline">
+                        <div class="header__search">
+                            <div class="search">
+                                <form>
+                                    <button></button>
+                                    <input type="text" placeholder="Поиск">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header__menu">
+                            <div class="header__sandwich js-sidebar-show hide-on-desktop">
+                                <span><ins></ins>Меню</span>
+                            </div>
+                            <!--  -->
+                            <div class="menu hide-on-tablet hide-on-mobile">
+                                <nav class="menu__items">
+                                    <div class="menu__item">
+                                        <span><ins></ins>Каталог</span>
+                                        <div class="menu__submenu">
+                                            <a href="#">Букеты</a>
+                                            <a href="#">Композиции</a>
+                                            <a href="#">Монобукеты</a>
+                                            <a href="#">Фруктовые/сладкие букеты </a>
+                                            <a href="#">Букеты невесты</a>
+                                            <a href="#">Мужские букеты</a>
+                                        </div>
+                                    </div>
+                                    <div class="menu__item">
+                                        <a href="#">Доставка</a>
+                                    </div>
+                                    <div class="menu__item">
+                                        <a href="#">Оплата</a>
+                                    </div>
+                                    <div class="menu__item">
+                                        <a href="#">Контакты</a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <!--  -->
+                        </div>
+                        <div class="header__cart">
+                            <div class="cart-header">
+                                <a href="#"><ins class="hide-on-mobile">Корзина</ins><ins class="hide-on-tablet hide-on-desktop">&nbsp;</ins><span>12</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <section class="l-content"> 
+            <div class="content__wrap">
+                <nav class="breadcrumbs">
+                    <a href="#">Главная</a>
+                    <a href="#">Букеты</a>
+                </nav>
+                <div class="b-product">
+                    <div class="product__gallery"> 
+                        <div class="b-product-gallery">
+                            <div class="product-gallery__nav">
+                                <div class="swiper-container swiper-container--gallery-nav">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source srcset='./img/catalog-pic-detail.webp' type='image/webp'>
+                                                <source srcset='./img/catalog-pic-detail.jpg' type='image/jpeg'>
+                                                <img src='./img/catalog-pic-detail.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source srcset='./img/catalog-pic-detail-2.webp' type='image/webp'>
+                                                <source srcset='./img/catalog-pic-detail-2.jpg' type='image/jpeg'>
+                                                <img src='./img/catalog-pic-detail-2.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source srcset='./img/catalog-pic-detail.webp' type='image/webp'>
+                                                <source srcset='./img/catalog-pic-detail.jpg' type='image/jpeg'>
+                                                <img src='./img/catalog-pic-detail.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source srcset='./img/catalog-pic-detail-2.webp' type='image/webp'>
+                                                <source srcset='./img/catalog-pic-detail-2.jpg' type='image/jpeg'>
+                                                <img src='./img/catalog-pic-detail-2.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-gallery__main">
+                                <div class="swiper-container swiper-container--gallery">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source srcset='./img/catalog-pic-detail.webp' type='image/webp'>
+                                                <source srcset='./img/catalog-pic-detail.jpg' type='image/jpeg'>
+                                                <img src='./img/catalog-pic-detail.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source srcset='./img/catalog-pic-detail-2.webp' type='image/webp'>
+                                                <source srcset='./img/catalog-pic-detail-2.jpg' type='image/jpeg'>
+                                                <img src='./img/catalog-pic-detail-2.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source srcset='./img/catalog-pic-detail.webp' type='image/webp'>
+                                                <source srcset='./img/catalog-pic-detail.jpg' type='image/jpeg'>
+                                                <img src='./img/catalog-pic-detail.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <picture>
+                                                <source srcset='./img/catalog-pic-detail-2.webp' type='image/webp'>
+                                                <source srcset='./img/catalog-pic-detail-2.jpg' type='image/jpeg'>
+                                                <img src='./img/catalog-pic-detail-2.jpg' alt=''>
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__content">
+                        <div class="product__stars">
+                            <div class="stars">
+                                <div class="stars__star stars__star--full"></div>
+                                <div class="stars__star stars__star--full"></div>
+                                <div class="stars__star stars__star--full"></div>
+                                <div class="stars__star stars__star--half"></div>
+                                <div class="stars__star stars__star--empty"></div>
+                            </div>
+                            <a href="#">3 отзыва</a>
+                        </div>
+                        <div class="product__desc">
+                            <h1>Букет #36</h1>
+                            <p>Пионовидная роза вайт охара роза квик сэнд диантус роза кустовая хризантема рускус стабилизированный</p>
+                        </div>
+                        <div class="product__params">
+                            <div class="product__param">
+                                <span>Бесплатная доставка <img src="./img/param-delivery.svg" alt=""></span>
+                            </div>
+                            <div class="product__param">
+                                <span>Открытка в подарок <img src="./img/param-postcard.svg" alt=""></span>
+                            </div>
+                            <div class="product__param">
+                                <span>Фото перед отправкой <img src="./img/param-photo.svg" alt=""></span>
+                            </div>
+                            <div class="product__param">
+                                <span>Аква ваза <img src="./img/param-vase.svg" alt=""></span>
+                            </div>
+                        </div>
+                        <div class="product__options">
+                            <div class="product__option">
+                                <div class="b-select">
+                                    <div class="select__title">Размер букета</div>
+                                    <select>
+                                        <option>10 см</option>
+                                        <option>20 см</option>
+                                        <option>30 см</option>
+                                        <option>40 см</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="product__option">
+                                <div class="b-count">
+                                    <span class="count__minus js-count-input-minus"></span>
+                                    <div class="count__content">
+                                        <ins class="count__title">Количество</ins>
+                                        <input class="js-count-input" type="text" value="1" maxlength="3" pattern="[0-9]{1,5}" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                    </div>
+                                    <span class="count__plus js-count-input-plus"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__footer">
+                            <div class="product__price">2 500 ₽</div>
+                            <div class="product__oldprice">3 500 ₽</div>
+                        </div>
+                        <div class="product__btns">
+                            <div class="product__tocart">
+                                <button class="b-button b-button--big">В корзину</button>
+                            </div>
+                            <div class="product__quickcart">
+                                <a href="#">Быстрая покупка</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Дополните этот букет прекрасными подарками</h2>
+                <div class="catalog catalog--list catalog--carousel">
+                    <div class="swiper-container swiper-container--catalog">
+                        <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__pic">
+                                            <a href="#">
+                                                <picture>
+                                                    <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                                    <source srcset='./img/catalog-pic.png' type='image/png'>
+                                                    <img src='./img/catalog-pic.png' alt=''>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="catalog__content">
+                                            <div class="catalog__prices">
+                                                <div class="catalog__price"> 4 900 ₽</div>
+                                                <div class="catalog__oldprice"> 5 900 ₽</div>
+                                            </div>
+                                            <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                            <div class="catalog__btns">
+                                                <div class="catalog__tocart">
+                                                    <button class="b-button">В корзину</button>
+                                                </div>
+                                                <div class="catalog__quickcart">
+                                                    <a href="#">Быстрая покупка</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__pic">
+                                            <a href="#">
+                                                <picture>
+                                                    <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                                    <source srcset='./img/catalog-pic.png' type='image/png'>
+                                                    <img src='./img/catalog-pic.png' alt=''>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="catalog__content">
+                                            <div class="catalog__prices">
+                                                <div class="catalog__price"> 4 900 ₽</div>
+                                                <div class="catalog__oldprice"> 5 900 ₽</div>
+                                            </div>
+                                            <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                            <div class="catalog__btns">
+                                                <div class="catalog__tocart">
+                                                    <button class="b-button">В корзину</button>
+                                                </div>
+                                                <div class="catalog__quickcart">
+                                                    <a href="#">Быстрая покупка</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__pic">
+                                            <a href="#">
+                                                <picture>
+                                                    <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                                    <source srcset='./img/catalog-pic.png' type='image/png'>
+                                                    <img src='./img/catalog-pic.png' alt=''>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="catalog__content">
+                                            <div class="catalog__prices">
+                                                <div class="catalog__price"> 4 900 ₽</div>
+                                                <div class="catalog__oldprice"> 5 900 ₽</div>
+                                            </div>
+                                            <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                            <div class="catalog__btns">
+                                                <div class="catalog__tocart">
+                                                    <button class="b-button">В корзину</button>
+                                                </div>
+                                                <div class="catalog__quickcart">
+                                                    <a href="#">Быстрая покупка</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__pic">
+                                            <a href="#">
+                                                <picture>
+                                                    <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                                    <source srcset='./img/catalog-pic.png' type='image/png'>
+                                                    <img src='./img/catalog-pic.png' alt=''>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="catalog__content">
+                                            <div class="catalog__prices">
+                                                <div class="catalog__price"> 4 900 ₽</div>
+                                                <div class="catalog__oldprice"> 5 900 ₽</div>
+                                            </div>
+                                            <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                            <div class="catalog__btns">
+                                                <div class="catalog__tocart">
+                                                    <button class="b-button">В корзину</button>
+                                                </div>
+                                                <div class="catalog__quickcart">
+                                                    <a href="#">Быстрая покупка</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <h2>Вам также может понравиться</h2>
+                <div class="catalog catalog--list catalog--carousel">
+                    <div class="swiper-container swiper-container--catalog">
+                        <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__pic">
+                                            <a href="#">
+                                                <picture>
+                                                    <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                                    <source srcset='./img/catalog-pic.png' type='image/png'>
+                                                    <img src='./img/catalog-pic.png' alt=''>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="catalog__content">
+                                            <div class="catalog__prices">
+                                                <div class="catalog__price"> 4 900 ₽</div>
+                                                <div class="catalog__oldprice"> 5 900 ₽</div>
+                                            </div>
+                                            <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                            <div class="catalog__btns">
+                                                <div class="catalog__tocart">
+                                                    <button class="b-button">В корзину</button>
+                                                </div>
+                                                <div class="catalog__quickcart">
+                                                    <a href="#">Быстрая покупка</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__pic">
+                                            <a href="#">
+                                                <picture>
+                                                    <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                                    <source srcset='./img/catalog-pic.png' type='image/png'>
+                                                    <img src='./img/catalog-pic.png' alt=''>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="catalog__content">
+                                            <div class="catalog__prices">
+                                                <div class="catalog__price"> 4 900 ₽</div>
+                                                <div class="catalog__oldprice"> 5 900 ₽</div>
+                                            </div>
+                                            <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                            <div class="catalog__btns">
+                                                <div class="catalog__tocart">
+                                                    <button class="b-button">В корзину</button>
+                                                </div>
+                                                <div class="catalog__quickcart">
+                                                    <a href="#">Быстрая покупка</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__pic">
+                                            <a href="#">
+                                                <picture>
+                                                    <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                                    <source srcset='./img/catalog-pic.png' type='image/png'>
+                                                    <img src='./img/catalog-pic.png' alt=''>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="catalog__content">
+                                            <div class="catalog__prices">
+                                                <div class="catalog__price"> 4 900 ₽</div>
+                                                <div class="catalog__oldprice"> 5 900 ₽</div>
+                                            </div>
+                                            <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                            <div class="catalog__btns">
+                                                <div class="catalog__tocart">
+                                                    <button class="b-button">В корзину</button>
+                                                </div>
+                                                <div class="catalog__quickcart">
+                                                    <a href="#">Быстрая покупка</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="catalog__item">
+                                        <div class="catalog__pic">
+                                            <a href="#">
+                                                <picture>
+                                                    <source srcset='./img/catalog-pic.webp' type='image/webp'>
+                                                    <source srcset='./img/catalog-pic.png' type='image/png'>
+                                                    <img src='./img/catalog-pic.png' alt=''>
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div class="catalog__content">
+                                            <div class="catalog__prices">
+                                                <div class="catalog__price"> 4 900 ₽</div>
+                                                <div class="catalog__oldprice"> 5 900 ₽</div>
+                                            </div>
+                                            <div class="catalog__title"><a href="#">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                            <div class="catalog__btns">
+                                                <div class="catalog__tocart">
+                                                    <button class="b-button">В корзину</button>
+                                                </div>
+                                                <div class="catalog__quickcart">
+                                                    <a href="#">Быстрая покупка</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="reviews">
+                    <h2>отзывы покупателей</h2>
+                    <div class="reviews__cols">
+                        <div class="reviews__left">
+                            <div class="reviews__photos">
+                                <div class="reviews__photos-title">Фотографии покупателей</div>
+                                <div class="reviews__photos-items">
+                                    <a data-fslightbox="review-gallery" href="./img/review-photo.jpg"><img src="./img/review-photo-preview.jpg" alt=""></a>
+                                    <a data-fslightbox="review-gallery" href="./img/review-photo.jpg"><img src="./img/review-photo-preview.jpg" alt=""></a>
+                                    <a data-fslightbox="review-gallery" href="./img/review-photo.jpg"><img src="./img/review-photo-preview.jpg" alt=""></a>
+                                    <a data-fslightbox="review-gallery" href="./img/review-photo.jpg"><img src="./img/review-photo-preview.jpg" alt=""></a>
+                                    <a data-fslightbox="review-gallery" href="./img/review-photo.jpg"><img src="./img/review-photo-preview.jpg" alt=""></a>
+                                    <a data-fslightbox="review-gallery" href="./img/review-photo.jpg"><img src="./img/review-photo-preview.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <div class="reviews__chat">
+                                <div class="reviews__chat-item">
+                                    <div class="reviews__chat-ava"><img src="./img/ava.jpg" alt=""></div>
+                                    <div class="reviews__chat-content">
+                                        <div class="reviews__chat-top">
+                                            <div class="reviews__chat-name">Татьяна И</div>
+                                            <div class="reviews__chat-date">7 апреля 2022</div>
+                                            <div class="reviews__chat-stars">
+                                                <div class="stars">
+                                                    <div class="stars__star stars__star--full"></div>
+                                                    <div class="stars__star stars__star--full"></div>
+                                                    <div class="stars__star stars__star--full"></div>
+                                                    <div class="stars__star stars__star--full"></div>
+                                                    <div class="stars__star stars__star--full"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__chat-block">
+                                            <strong>Достоинства</strong>
+                                            <p>Заказывали на день рождение сюрпризом с речью- открыткой. Курьер с порога произнёс поздравление. Именинница была очарована. Спасибо! </p>
+                                        </div>
+                                        <div class="reviews__chat-block">
+                                            <strong>Недостатки</strong>
+                                            <p>Время не то. Но лично руководитель звонил, извинялся, согласовывал время и отслеживать доставку. Приятно. Спасибо! </p>
+                                        </div>
+                                        <div class="reviews__photos">
+                                            <div class="reviews__photos-items">
+                                                <a data-fslightbox href="./img/review-photo.jpg"><img src="./img/review-photo-preview.jpg" alt=""></a>
+                                                <a data-fslightbox href="./img/review-photo.jpg"><img src="./img/review-photo-preview.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__chat-helpful">
+                                            <strong>Вам помог этот отзыв?</strong>
+                                            <span class="b-button b-button--xsmall b-button--gray">Да <ins>0</ins></span>
+                                            <span class="b-button b-button--xsmall b-button--gray">Нет <ins>0</ins></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__chat-answer">
+                                    <div class="reviews__chat-ava"><img src="./img/review-answer.svg" alt=""></div>
+                                    <div class="reviews__chat-content">
+                                        <div class="reviews__chat-top">
+                                            <div class="reviews__chat-name">Флоренция</div>
+                                            <div class="reviews__chat-date">7 апреля 2022</div>
+                                        </div>
+                                        <div class="reviews__chat-block">
+                                            <p>Добрый день, Татьяна!. Очень сожалеем, что Вам пришлось столкнуться с такими негативными эмоциями. В каждом сервисе происходят ошибки, ещё раз примите извинения, такие недоразумения будут исключены.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__chat-item">
+                                    <div class="reviews__chat-ava"></div>
+                                    <div class="reviews__chat-content">
+                                        <div class="reviews__chat-top">
+                                            <div class="reviews__chat-name">Татьяна И</div>
+                                            <div class="reviews__chat-date">7 апреля 2022</div>
+                                            <div class="reviews__chat-stars">
+                                                <div class="stars">
+                                                    <div class="stars__star stars__star--full"></div>
+                                                    <div class="stars__star stars__star--full"></div>
+                                                    <div class="stars__star stars__star--half"></div>
+                                                    <div class="stars__star stars__star--empty"></div>
+                                                    <div class="stars__star stars__star--empty"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="reviews__chat-block">
+                                            <strong>Достоинства</strong>
+                                            <p>Заказывали на день рождение сюрпризом с речью- открыткой. Курьер с порога произнёс поздравление. Именинница была очарована. Спасибо! </p>
+                                        </div>
+                                        <div class="reviews__chat-block">
+                                            <strong>Недостатки</strong>
+                                            <p>Время не то. Но лично руководитель звонил, извинялся, согласовывал время и отслеживать доставку. Приятно. Спасибо! </p>
+                                        </div>
+                                        <div class="reviews__chat-helpful">
+                                            <strong>Вам помог этот отзыв?</strong>
+                                            <span class="b-button b-button--xsmall b-button--gray">Да <ins>0</ins></span>
+                                            <span class="b-button b-button--xsmall b-button--gray">Нет <ins>0</ins></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__chat-btn"><a href="#" class="b-button b-button--gray">Показать больше отзывов</a></div>
+                            </div>
+                        </div>
+                        <div class="reviews__right">
+                            <div class="reviews__rating">
+                                <div class="reviews__rating-count">4.9</div>
+                                <div class="reviews__rating-content">
+                                    <span>На основании 82 отзывов</span>
+                                    <div class="stars">
+                                        <div class="stars__star stars__star--full"></div>
+                                        <div class="stars__star stars__star--full"></div>
+                                        <div class="stars__star stars__star--full"></div>
+                                        <div class="stars__star stars__star--full"></div>
+                                        <div class="stars__star stars__star--full"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews__bars">
+                                <div class="reviews__bars-item">
+                                    <div class="reviews__bars-title">5 звезд</div>
+                                    <div class="reviews__bars-bar"><span style="width: 93%;"></span></div>
+                                    <div class="reviews__bars-count">45</div>
+                                </div>
+                                <div class="reviews__bars-item">
+                                    <div class="reviews__bars-title">4 звезд</div>
+                                    <div class="reviews__bars-bar"><span style="width: 13%;"></span></div>
+                                    <div class="reviews__bars-count">5</div>
+                                </div>
+                                <div class="reviews__bars-item">
+                                    <div class="reviews__bars-title">3 звезд</div>
+                                    <div class="reviews__bars-bar"><span style="width: 10%;"></span></div>
+                                    <div class="reviews__bars-count">4</div>
+                                </div>
+                                <div class="reviews__bars-item">
+                                    <div class="reviews__bars-title">2 звезд</div>
+                                    <div class="reviews__bars-bar"><span></span></div>
+                                    <div class="reviews__bars-count">0</div>
+                                </div>
+                                <div class="reviews__bars-item">
+                                    <div class="reviews__bars-title">1 звезд</div>
+                                    <div class="reviews__bars-bar"><span style="width: 3%;"></span></div>
+                                    <div class="reviews__bars-count">1</div>
+                                </div>
+                            </div>
+                            <div class="reviews__btn">
+                                <a href="#" class="b-button b-button--big">Написать отзыв</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscrie-form">
+                    <div class="subscrie-form__content">
+                        <div class="subscrie-form__title">Будьте в курсе</div>
+                        <p>Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</p>
+                        <form class="subscrie-form__form">
+                            <input type="email" placeholder="Email">
+                            <button class="b-button"><span class="hide-on-mobile">Подписаться</span><img class="hide-on-tablet hide-on-desktop" src="./img/mail.svg" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="map">
+                    <div class="map__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae27ee8cb1b7359cdbcf808d213211b8950aad2e8c9016f210dd301c35da0f6d1&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
+                    <div class="map__content">
+                        <div class="map__title">Доставка цветов в Смоленске</div>
+                        <p>Мастерская флористики и&nbsp;декора &laquo;Флоренция&raquo;&nbsp;&mdash; это море неординарных букетов и&nbsp;цветочных композиций из&nbsp;элитных сортов для вас и&nbsp;ваших близких. Курьер доставит благоухающий презент на&nbsp;дом или в&nbsp;офис в&nbsp;Смоленске абсолютно бесплатно.</p>
+                        <p><a href="#">Подробнее</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="l-footer">
+            <div class="footer">
+                <div class="footer__inner">
+                    <div class="footer__cols">
+                        <div class="footer__col">
+                            <div class="footer__col-inner">
+                                <div class="footer__logo">
+                                    <a href="/"><img src="./img/florencia-logo.png" alt=""></a>
+                                </div>
+                                <div class="footer__social">
+                                    <a href="#"><img src="./img/yt.svg" alt=""></a>
+                                    <a href="#"><img src="./img/whatsapp.svg" alt=""></a>
+                                    <a href="#"><img src="./img/vk.svg" alt=""></a>
+                                    <a href="#"><img src="./img/viber.svg" alt=""></a>
+                                    <a href="#"><img src="./img/telegram.svg" alt=""></a>
+                                </div>
+                                <div class="footer__phone"><a href="tel:+79107859700">+7 (910) 785-97-00</a><span>Whatsapp | Viber | Telegram</span></div>
+                                <div class="footer__phone"><a href="tel:+48127679700">67–97–00</a><span>Городской</span></div>
+                            </div>
+                        </div>
+                        <div class="footer__col footer__col--menu">
+                            <nav class="footer-menu">
+                                <div class="footer-menu__col">
+                                    <div class="footer-menu__title js-footer-menu-title">Покупателям <ins></ins></div>
+                                    <div class="footer-menu__items">
+                                        <a href="#">Стоимость, сроки и зоны доставки</a>
+                                        <a href="#">Способы оплаты</a>
+                                        <a href="#">Гарантия качества</a>
+                                        <a href="#">Возврат товаров</a>
+                                        <a href="#">Договор оферты</a>
+                                        <a href="#">Конфиденциальность</a>
+                                        <a href="#">Безопасность</a>
+                                        <a href="#">Корпоративное обслуживание</a>
+                                        <a href="#">Подарочные сертификаты</a>
+                                        <a href="#">Партнерская программа</a>
+                                        <a href="#">Контакты</a>
+                                        <a href="#">О нас</a>
+                                    </div>
+                                </div>
+                                <div class="footer-menu__col">
+                                    <div class="footer-menu__title js-footer-menu-title">Каталог <ins></ins></div>
+                                    <div class="footer-menu__items">
+                                        <a href="#">Букеты</a>
+                                        <a href="#">Композиции</a>
+                                        <a href="#">Монобукеты</a>
+                                        <a href="#">Фруктовые/сладкие букеты </a>
+                                        <a href="#">Букеты невесты</a>
+                                        <a href="#">Мужские букеты</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="footer__col">
+                            <div class="footer__address">
+                                <strong>Адрес</strong>
+                                <p>214000 г. Смоленск ул. Глинки 2а</p>
+                            </div>
+                            <div class="footer__address">
+                                <strong>Время работы мастерской</strong>
+                                <p>Ежедневно с 10:00 до 20:00 <span>(UTC/GMT +3 Moscow)</span></p>
+                            </div>
+                            <div class="footer__details"> ИП Возовик Вадим Васильевич <br> Cайт имеет возрастное ограничение 16+ <br> Юр. Адрес: г. Смоленск, <br> ул. Михайловская д. 10 214019 <br> ИНН 673112162824 </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sidebar js-sidebar">
+            <div class="sidebar__line"><p>Заказы, оформленные после 19:00, доставляются на следующий день с 10.00</p></div>
+            <div class="sidebar__top">
+                <div class="sidebar__close js-sidebar-hide"></div>
+                <div class="sidebar__logo">
+                    <a href="/"><img src="./img/florencia-logo.png" alt=""></a>
+                </div>
+                <div class="sidebar__cart">
+                    <div class="cart-header">
+                        <a href="#"><ins>&nbsp;</ins><span>12</span></a>
+                    </div>
+                </div>
+                <div class="sidebar__social">
+                    <a href="#"><img src="./img/yt.svg" alt=""></a>
+                    <a href="#"><img src="./img/whatsapp.svg" alt=""></a>
+                    <a href="#"><img src="./img/vk.svg" alt=""></a>
+                    <a href="#"><img src="./img/viber.svg" alt=""></a>
+                    <a href="#"><img src="./img/telegram.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="sidebar__search">
+                <div class="search">
+                    <form>
+                        <button></button>
+                        <input type="text" placeholder="Поиск">
+                    </form>
+                </div>
+            </div>
+            <div class="sidebar__inner">
+                <div class="sidebar__menu">
+                    <div class="sidebar__menu-item">
+                        <span class="js-menu-collapse">Каталог<ins></ins></span>
+                        <div class="sidebar__menu-submenu">
+                            <a href="#">Букеты</a>
+                            <a href="#">Композиции</a>
+                            <a class="active" href="#">Монобукеты</a>
+                            <a href="#">Фруктовые/сладкие букеты </a>
+                            <a href="#">Букеты невесты</a>
+                            <a href="#">Мужские букеты</a>
+                        </div>
+                    </div>
+                    <div class="sidebar__menu-item">
+                        <span class="js-menu-collapse">Покупателям<ins></ins></span>
+                        <div class="sidebar__menu-submenu">
+                            <a href="#">Стоимость, сроки и зоны доставки</a>
+                            <a href="#">Способы оплаты</a>
+                            <a href="#">Гарантия качества</a>
+                            <a href="#">Возврат товаров</a>
+                            <a href="#">Договор оферты</a>
+                            <a href="#">Конфиденциальность</a>
+                            <a href="#">Безопасность</a>
+                            <a href="#">Корпоративное обслуживание</a>
+                            <a href="#">Подарочные сертификаты</a>
+                            <a href="#">Партнерская программа</a>
+                            <a href="#">Контакты</a>
+                            <a href="#">О нас</a>
+                        </div>
+                    </div>
+                    <div class="sidebar__menu-item"><a href="#">Ссылка куда то</a></div>
+                </div>
+            </div>
+            <div class="sidebar__footer">
+                <div class="sidebar__info">
+                    <span>Наш адрес</span>
+                    <p>Смоленск, ул. Глинки 2А</p>
+                    <ins>Бесплатная доставка</ins>
+                </div>
+                <div class="sidebar__info">
+                    <span>Whatsapp | Viber | Telegram</span>
+                    <p><a href="tel:+79107859700">+7 (910) 785-97-00</a></p>
+                    <ins><a href="#">Заказать звонок</a></ins>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-bg js-sidebar-bg js-sidebar-hide"></div>
+    </div>
+    
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
