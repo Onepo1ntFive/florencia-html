@@ -27,7 +27,7 @@
                         <div class="header__info">
                             <span>Whatsapp | Viber | Telegram</span>
                             <p><a href="tel:+79107859700">+7 (910) 785-97-00</a></p>
-                            <ins><a href="#">Заказать звонок</a></ins>
+                            <ins><a href="#" class="js-modal-show-callback">Заказать звонок</a></ins>
                         </div>
                         <div class="header__social">
                             <a href="#"><img src="./img/yt.svg" alt=""></a>
@@ -79,7 +79,7 @@
                         </div>
                         <div class="header__cart">
                             <div class="cart-header">
-                                <a href="#"><ins class="hide-on-mobile">Корзина</ins><ins class="hide-on-tablet hide-on-desktop">&nbsp;</ins><span>12</span></a>
+                                <a href="#" class="js-sidebar-cart-show"><ins class="hide-on-mobile">Корзина</ins><ins class="hide-on-tablet hide-on-desktop">&nbsp;</ins><span>12</span></a>
                             </div>
                         </div>
                     </div>
@@ -385,7 +385,7 @@
                 </div>
                 <div class="sidebar__cart">
                     <div class="cart-header">
-                        <a href="#"><ins>&nbsp;</ins><span>12</span></a>
+                        <a href="#" class="js-sidebar-cart-show js-sidebar-hide"><ins>&nbsp;</ins><span>12</span></a>
                     </div>
                 </div>
                 <div class="sidebar__social">
@@ -446,11 +446,177 @@
                 <div class="sidebar__info">
                     <span>Whatsapp | Viber | Telegram</span>
                     <p><a href="tel:+79107859700">+7 (910) 785-97-00</a></p>
-                    <ins><a href="#">Заказать звонок</a></ins>
+                    <ins><a href="#" class="js-modal-show-callback">Заказать звонок</a></ins>
                 </div>
             </div>
         </div>
         <div class="sidebar-bg js-sidebar-bg js-sidebar-hide"></div>
+        <div class="sidebar sidebar--cart js-sidebar-cart">
+            <div class="sidebar__close js-sidebar-cart-hide"></div>
+            <div class="sidebar__inner">
+                <div class="cart cart--sidebar">
+                    <div class="cart__top">2 товара на сумму <span>1 500 ₽</span></div>
+                    <div class="cart__items">
+                        <div class="cart__item">
+                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                            <div class="cart__content">
+                                <div class="cart__price">1 500 ₽</div>
+                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="cart__count">
+                                    <div class="b-count b-count--small">
+                                        <span class="count__minus js-count-input-minus"></span>
+                                        <div class="count__content">
+                                            <input class="js-count-input" type="text" value="1" maxlength="3" pattern="[0-9]{1,5}" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                        </div>
+                                        <span class="count__plus js-count-input-plus"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__item">
+                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                            <div class="cart__content">
+                                <div class="cart__price">1 500 ₽</div>
+                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="cart__count">
+                                    <div class="b-count b-count--small">
+                                        <span class="count__minus js-count-input-minus"></span>
+                                        <div class="count__content">
+                                            <input class="js-count-input" type="text" value="1" maxlength="3" pattern="[0-9]{1,5}" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                        </div>
+                                        <span class="count__plus js-count-input-plus"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__carousel">
+                        <div class="cart__carousel-title">Добавить к заказу?</div>
+                        <div class="cart__carousel-carousel">
+                            <div class="swiper-container swiper-container--cart">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="cart__item">
+                                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                            <div class="cart__content">
+                                                <div class="cart__price">1 500 ₽</div>
+                                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cart__item">
+                                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                            <div class="cart__content">
+                                                <div class="cart__price">1 500 ₽</div>
+                                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cart__item">
+                                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                            <div class="cart__content">
+                                                <div class="cart__price">1 500 ₽</div>
+                                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__footer">
+                        <div class="cart__promo">
+                            <form>
+                                <input type="text" placeholder="Промокод">
+                                <button>Применить</button>
+                            </form>
+                            <div class="cart__promo-error">Промокод не найден. попробуйте другой</div>
+                        </div>
+                        <div class="cart__cost">
+                            <p><span>Скидка по промокоду</span><ins>-300 ₽</ins></p>
+                            <p><span>Сумма заказа</span><strong>4 900 ₽</strong></p>
+                            <div><a href="#" class="b-button b-button--big">оформить заказ</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-bg js-sidebar-cart-bg js-sidebar-cart-hide"></div>
+        <div class="modal-bg js-modal-callback-bg js-modal-hide-callback"></div>
+        <div class="modal js-modal-callback">
+            <div class="modal__inner">
+                <div class="modal__close js-modal-hide-callback"></div>
+                <div class="modal__content">
+                    <div class="modal__title h2">Заказать звонок</div>
+                    <p>Наши специалист свяжется с вами 
+                        в ближайшее время</p>
+                    <div class="b-form b-form--popup">
+                        <form>
+                            <div class="form__item">
+                                <div class="form__inputs">
+                                    <div class="form__input">
+                                        <div class="b-input">
+                                            <input type="text" name="" id="form-input-1" placeholder=" " required value="Фамилия, Имя, Отчество">
+                                            <label for="form-input-1">Ваше имя</label>
+                                        </div>
+                                    </div>
+                                    <div class="form__input">
+                                        <div class="b-input">
+                                            <input type="phone" name="" id="form-input-2" placeholder=" " required>
+                                            <label for="form-input-2">Ваш телефон</label>
+                                        </div>
+                                    </div>
+                                    <div class="form__input">
+                                        <button class="b-button b-button--big">Отправить</button>
+                                    </div>
+                                </div>
+                                <div class="form__agree">
+                                    Нажатием кнопки я принимаю условия <a href="#">Оферты</a> по использованию сайта и согласен с <a href="#">Политикой конфиденциальности</a> 
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-bg js-modal-quick-bg js-modal-hide-quick"></div>
+        <div class="modal js-modal-quick">
+            <div class="modal__inner">
+                <div class="modal__close js-modal-hide-quick"></div>
+                <div class="modal__content">
+                    <div class="modal__title h2">Быстрая покупка</div>
+                    <p>Скоро наш специалист свяжется с вами для уточнения деталей заказа</p>
+                    <div class="b-form b-form--popup">
+                        <form>
+                            <div class="form__item">
+                                <div class="form__inputs">
+                                    <div class="form__input">
+                                        <div class="b-input">
+                                            <input type="text" name="" id="form-input-1" placeholder=" " required value="Фамилия, Имя, Отчество">
+                                            <label for="form-input-1">Ваше имя</label>
+                                        </div>
+                                    </div>
+                                    <div class="form__input">
+                                        <div class="b-input">
+                                            <input type="phone" name="" id="form-input-2" placeholder=" " required>
+                                            <label for="form-input-2">Ваш телефон</label>
+                                        </div>
+                                    </div>
+                                    <div class="form__input">
+                                        <button class="b-button b-button--big">Отправить</button>
+                                    </div>
+                                </div>
+                                <div class="form__agree"> Нажатием кнопки я принимаю условия <a href="#">Оферты</a> по использованию сайта и согласен с <a href="#">Политикой конфиденциальности</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="./js/main.js"></script>
