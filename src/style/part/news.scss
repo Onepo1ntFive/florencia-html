@@ -181,6 +181,27 @@ $newsClass: '.news';
         }
     }
 }
+#{$newsClass}--detail + #{$newsClass}--list {
+    position: relative;
+    padding-top: 5rem;
+
+    @media (min-width: $breakpoint-tablet) {
+        padding-top: 7rem;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        padding-top: 11rem;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -300rem;
+        right: -300rem;
+        border-bottom: 1px solid $color-font-10p;
+    }
+}
 //
 #{$newsClass}--sale-detail {
     #{$newsClass} {

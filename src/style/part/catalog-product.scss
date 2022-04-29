@@ -202,6 +202,7 @@
         a {
             &:link,
             &:visited {
+                margin-bottom: 1px;
                 color: $color-font;
                 font-size: 1.4rem;
                 border-bottom: 1px solid $color-font;

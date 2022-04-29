@@ -1,43 +1,159 @@
 /*----------*/
 .b-product-gallery {
+    padding-bottom: 3rem;
     display: flex;
     flex-flow: row wrap;
     text-align: center;
-
-    picture {
-    }
-    img {
-    }
-
-    .product-gallery__nav {
+    
+    .product__nav {
+        margin-left: -1rem;
+        margin-right: -1rem;
         position: relative;
-        max-width: 100%;
+        flex: 1 auto;
+        display: flex;
+        flex-flow: row wrap;
         order: 2;
-
+        
         @media (min-width: $breakpoint-tablet) {
-            width: 8rem;
+            margin-left: 0;
+            margin-right: 0;
+            display: block;
+            width: 10rem;
             order: 1;
         }
+
+        &-item {
+            cursor: pointer;
+            width: calc(25% - 2rem);
+            margin-left: 1rem;
+            margin-right: 1rem;
+            transition: opacity 0.2s ease-in-out;
+
+            @media (min-width: $breakpoint-tablet) {
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 2rem;
+                width: 8rem;
+            }
+
+            picture {
+                pointer-events: none;
+            }
+            img {
+                border-radius: 0.5rem;
+                max-width: 100%;
+                pointer-events: none;
+            }
+
+            &:hover {
+                @media (min-width: $breakpoint-desktop) {
+                    opacity: 0.4;
+                }
+            }
+            &.active {
+                opacity: 0.4;
+            }
+        }
+        &-video {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            position: relative;
+            border: 2px solid $color-lightgray4;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            width: calc(25% - 2rem);
+            transition: border 0.2s ease-in-out;
+
+            @media (min-width: $breakpoint-tablet) {
+                margin-left: 0;
+                margin-right: 0;
+                width: 8rem;
+            }
+
+            &:hover {
+                @media (min-width: $breakpoint-desktop) {
+                    border-color: $color-green;
+                }
+            }
+            &.active {
+                border-color: $color-green;
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-top: -2.5rem;
+                margin-left: -2.5rem;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 100rem;
+                background: url('../img/play.svg');
+                pointer-events: none;
+            }
+
+            img {
+                max-width: 100%;
+                pointer-events: none;
+            }
+        }
     }
+
     .product-gallery__main {
         margin-bottom: 1rem;
-        border-radius: 0.5rem;
-        max-width: 100%;
+        width: 100%;
         order: 1;
 
         @media (min-width: $breakpoint-tablet) {
             margin-bottom: 0;
-            margin-left: 2rem;
+            padding-left: 2.5rem;
             width: calc(100% - 10rem);
             order: 2;
+        }
+
+        &-video {
+            width: 100%;
+            height: 100%;
+
+            a {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+
+                &:hover::before {
+                    opacity: 0.75;
+                }
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-top: -2.5rem;
+                    margin-left: -2.5rem;
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 100rem;
+                    background: url('../img/play.svg');
+                    pointer-events: none;
+                    transition: opacity 0.2s ease-in-out;
+                }
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                background-color: $color-black;
+                pointer-events: none;
+            }
         }
     }
 }
 /*----------*/
-.swiper-container--gallery-nav,
-.swiper-container--gallery {
-}
-
 .swiper-container--gallery {
     height: 100%;
 
@@ -47,89 +163,7 @@
 
         img {
             max-width: 100%;
-        }
-    }
-}
-.swiper-container--gallery-nav {
-    position: static;
-    box-sizing: border-box;
-    width: 100%;
-
-    @media (min-width: $breakpoint-tablet) {
-        height: 65rem;
-    }
-
-    .swiper-slide {
-        img {
-            height: 100%;
-            width: 100%;
             border-radius: 0.5rem;
-            box-shadow: none;
-            transition-property: opacity;
-            transition-duration: 0.2s;
-            transition-timing-function: ease-in-out;
-            cursor: pointer;
-            object-fit: contain;
-        }
-
-        &:hover {
-            img {
-                border-color: $color-green;
-                opacity: 1;
-            }
-        }
-    }
-    .swiper-slide-active {
-        img {
-            opacity: 0.4;
-        }
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-        margin-top: -1.5rem;
-        top: 50%;
-        position: absolute;
-        width: 3rem;
-        height: 3rem;
-        line-height: 2.5rem;
-        cursor: pointer;
-
-        @media (min-width: $breakpoint-tablet) {
-            margin-top: 0;
-            margin-left: -1.5rem;
-            top: auto;
-        }
-
-        path {
-            fill: $color-gray2;
-            transition: fill 0.2s ease-in-out;
-        }
-
-        &:hover {
-            path {
-                fill: $color-green;
-            }
-        }
-    }
-    .swiper-button-prev {
-        left: 0;
-        transform: rotate(-90deg);
-
-        @media (min-width: $breakpoint-tablet) {
-            top: 0;
-            left: 50%;
-            transform: none;
-        }
-    }
-    .swiper-button-next {
-        right: 0;
-        transform: rotate(90deg);
-
-        @media (min-width: $breakpoint-tablet) {
-            bottom: 0;
-            right: auto;
-            left: 50%;
-            transform: rotate(180deg);
         }
     }
 }

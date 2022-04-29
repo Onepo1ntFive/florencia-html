@@ -1,8 +1,12 @@
 .breadcrumbs {
     padding-top: 1.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-flow: row wrap;
+    
+    @media (min-width: $breakpoint-tablet) {
+        padding-bottom: 5rem;
+    }
 
     a {
         position: relative;

@@ -34,13 +34,14 @@
         <div class="product__options">
             <div class="product__option">
                 <div class="b-select">
-                    <div class="select__title">Размер букета</div>
-                    <select>
+                    <select id="select-111"  class="js-select">
+                        <option data-placeholder="true"></option>
                         <option>10 см</option>
                         <option>20 см</option>
                         <option>30 см</option>
                         <option>40 см</option>
                     </select>
+                    <label for="select-111" class="select__title">Размер букета</label>
                 </div>
             </div>
             <div class="product__option">
@@ -63,7 +64,7 @@
                 <button class="b-button b-button--big">В корзину</button>
             </div>
             <div class="product__quickcart">
-                <a href="#">Быстрая покупка</a>
+                <a href="#" class="js-modal-show-quick">Быстрая покупка</a>
             </div>
         </div>
     </div>

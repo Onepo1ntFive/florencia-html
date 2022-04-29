@@ -2,9 +2,11 @@
     overflow: hidden;
 }
 // --
-.sidebar {
+$sidebarClass: '.sidebar';
+#{$sidebarClass} {
     position: fixed;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     top: 0;
     right: -150%;
     bottom: 0;
@@ -156,6 +158,32 @@
                 }
                 &:hover {
                     text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &--cart {
+        overflow: hidden;
+
+        #{$sidebarClass} {
+            &__inner {
+                height: 100%;
+            }
+            &__close {
+                position: absolute;
+                right: 1.5rem;
+                top: 1.2rem;
+                cursor: pointer;
+
+                &::before,
+                &::after {
+                    background: $color-font-gray;
+                }
+
+                &:hover::before,
+                &:hover::after {
+                    background: $color-green;
                 }
             }
         }

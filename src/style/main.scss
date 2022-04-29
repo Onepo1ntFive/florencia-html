@@ -4,6 +4,7 @@
 
 @import './libs/nouislider';
 @import './libs/swiper';
+@import './libs/slimselect';
 
 @import './part/app';
 @import './part/layout';
@@ -26,3 +27,7 @@
 @import './part/catalog-product';
 @import './part/catalog-product-gallery';
 @import './part/reviews';
+@import './part/modal';
+@import './part/form';
+@import './part/cart';
+@import './part/order-confirm';

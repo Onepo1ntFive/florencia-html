@@ -8,6 +8,7 @@
 -  [Sale list](https://onepo1ntfive.github.io/florencia-html/sale-list.html)
 -  [Sale detail](https://onepo1ntfive.github.io/florencia-html/sale-detail.html)
 -  [Contacts](https://onepo1ntfive.github.io/florencia-html/contacts.html)
+-  [Order confirm](https://onepo1ntfive.github.io/florencia-html/order-confirm.html)
 
 # gulp simple dev build
 

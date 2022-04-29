@@ -1,0 +1,21 @@
+.order-confirm {
+    display: flex;
+    flex-flow: row wrap;
+    &__left {
+        width: 100%;
+        padding-bottom: 3rem;
+
+        @media (min-width: $breakpoint-desktop) {
+            padding-bottom: 0;
+            padding-right: 14rem;
+            width: calc(100% - 34rem);
+        }
+    }
+    &__right {
+        width: 100%;
+
+        @media (min-width: $breakpoint-desktop) {
+            width: 34rem;
+        }
+    }
+}
