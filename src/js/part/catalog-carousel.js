@@ -15,7 +15,7 @@
             },
             1200: {
                 slidesPerView: 4,
-                spaceBetween: 75,
+                spaceBetween: 55,
             }
         }
     });
