@@ -16132,7 +16132,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       },
       1200: {
         slidesPerView: 4,
-        spaceBetween: 75
+        spaceBetween: 55
       }
     }
   });
