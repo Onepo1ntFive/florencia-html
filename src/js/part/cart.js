@@ -44,10 +44,10 @@
                 stickyBlock.classList.remove('fixed');
 
             }
-        } else {
-            stickyBlock.classList.remove('abs');
-            stickyBlock.classList.remove('fixed');
         }
+    } else {
+        stickyBlock.classList.remove('abs');
+        stickyBlock.classList.remove('fixed');
     }
 
 })();
