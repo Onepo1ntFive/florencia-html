@@ -82,6 +82,100 @@
                                 <a href="#" class="js-sidebar-cart-show"><ins class="hide-on-mobile">Корзина</ins><ins class="hide-on-tablet hide-on-desktop">&nbsp;</ins><span>12</span></a>
                             </div>
                         </div>
+                        <div class="sidebar sidebar--cart js-sidebar-cart">
+                            <div class="sidebar__close js-sidebar-cart-hide"></div>
+                            <div class="sidebar__inner">
+                                <div class="cart cart--sidebar">
+                                    <div class="cart__top">2 товара на сумму <span>1 500 ₽</span></div>
+                                    <div class="cart__items">
+                                        <div class="cart__item">
+                                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                            <div class="cart__content">
+                                                <div class="cart__price">1 500 ₽</div>
+                                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                                <div class="cart__count">
+                                                    <div class="b-count b-count--small">
+                                                        <span class="count__minus js-count-input-minus"></span>
+                                                        <div class="count__content">
+                                                            <input class="js-count-input" type="text" value="1" maxlength="3" pattern="[0-9]{1,5}" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                                        </div>
+                                                        <span class="count__plus js-count-input-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart__item">
+                                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                            <div class="cart__content">
+                                                <div class="cart__price">1 500 ₽</div>
+                                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                                <div class="cart__count">
+                                                    <div class="b-count b-count--small">
+                                                        <span class="count__minus js-count-input-minus"></span>
+                                                        <div class="count__content">
+                                                            <input class="js-count-input" type="text" value="1" maxlength="3" pattern="[0-9]{1,5}" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+                                                        </div>
+                                                        <span class="count__plus js-count-input-plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart__carousel">
+                                        <div class="cart__carousel-title">Добавить к заказу?</div>
+                                        <div class="cart__carousel-carousel">
+                                            <div class="swiper-container swiper-container--cart">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="cart__item">
+                                                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                                            <div class="cart__content">
+                                                                <div class="cart__price">1 500 ₽</div>
+                                                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="cart__item">
+                                                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                                            <div class="cart__content">
+                                                                <div class="cart__price">1 500 ₽</div>
+                                                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="cart__item">
+                                                            <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                                            <div class="cart__content">
+                                                                <div class="cart__price">1 500 ₽</div>
+                                                                <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart__footer">
+                                        <div class="cart__promo">
+                                            <form>
+                                                <input type="text" placeholder="Промокод">
+                                                <button>Применить</button>
+                                            </form>
+                                            <div class="cart__promo-error">Промокод не найден. попробуйте другой</div>
+                                        </div>
+                                        <div class="cart__cost">
+                                            <p><span>Скидка по промокоду</span><ins>-300 ₽</ins></p>
+                                            <p><span>Сумма заказа</span><strong>4 900 ₽</strong></p>
+                                            <div><a href="#" class="b-button b-button--big">оформить заказ</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-bg js-sidebar-cart-bg js-sidebar-cart-hide"></div>
                     </div>
                 </div>
             </div>
@@ -279,31 +373,33 @@
                             </form>
                         </div>
                     </div>
-                    <div class="order-confirm__right">
-                        <h2>Состав заказа</h2>
-                        <div class="cart">
-                            <div class="cart__items">
-                                <div class="cart__item">
-                                    <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
-                                    <div class="cart__content">
-                                        <div class="cart__price">1 500 ₽</div>
-                                        <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                    <div class="order-confirm__right js-sticky-container">
+                        <div class="order-confirm__right-inner js-sticky-block">
+                            <h2>Состав заказа</h2>
+                            <div class="cart">
+                                <div class="cart__items">
+                                    <div class="cart__item">
+                                        <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                        <div class="cart__content">
+                                            <div class="cart__price">1 500 ₽</div>
+                                            <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="cart__item">
+                                        <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
+                                        <div class="cart__content">
+                                            <div class="cart__price">1 500 ₽</div>
+                                            <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="cart__item">
-                                    <div class="cart__pic"><a href="#" target="_blank"><img src="./img/cart-pic.jpg" alt=""></a></div>
-                                    <div class="cart__content">
-                                        <div class="cart__price">1 500 ₽</div>
-                                        <div class="cart__title"><a href="#" target="_blank">Весна #9 / Букет белых пионовидных тюльпанов 15 шт</a></div>
+                                <div class="cart__footer">
+                                    <div class="cart__cost">
+                                        <p><span>Скидка по промокоду</span><ins>-300 ₽</ins></p>
+                                        <p><span>Сумма заказа</span><strong>4 900 ₽</strong></p>
+                                        <div><a href="#" class="b-button b-button--big">оформить заказ</a></div>
+                                        <div class="cart__message">Оформляя заказ, Вы соглашаетесь с условиями <a href="#">предоставления услуг</a></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="cart__footer">
-                                <div class="cart__cost">
-                                    <p><span>Скидка по промокоду</span><ins>-300 ₽</ins></p>
-                                    <p><span>Сумма заказа</span><strong>4 900 ₽</strong></p>
-                                    <div><a href="#" class="b-button b-button--big">оформить заказ</a></div>
-                                    <div class="cart__message">Оформляя заказ, Вы соглашаетесь с условиями <a href="#">предоставления услуг</a></div>
                                 </div>
                             </div>
                         </div>
