@@ -12,10 +12,22 @@
         }
     }
     &__right {
+        position: relative;
         width: 100%;
 
         @media (min-width: $breakpoint-desktop) {
             width: 34rem;
+        }
+
+        &-inner {}
+        &-inner.fixed {
+            position: fixed;
+            top: 0;
+        }
+        &-inner.abs {
+            position: absolute;
+            bottom: 0;
+            top: auto !important;
         }
     }
 }
