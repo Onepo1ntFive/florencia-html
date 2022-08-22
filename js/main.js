@@ -16112,41 +16112,44 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       prevEl: '.swiper-button-prev'
     }
   });
-  var scrollPos = window.scrollY;
-  var stickyBlock = document.querySelector('.js-sticky-block');
-  var stickyContainer = document.querySelector('.js-sticky-container');
-  var stickyBlockTop = stickyBlock.getBoundingClientRect().top + scrollPos;
-  var stickyBlockBottom = stickyBlock.getBoundingClientRect().top + stickyBlock.offsetHeight + scrollPos;
-  var stickyBlockLeft = stickyContainer.getBoundingClientRect().left;
-  var stickyBlockWidth = stickyContainer.offsetWidth;
-  var stickyTopStop = stickyContainer.getBoundingClientRect().top + scrollPos;
-  var stickyBotStop = stickyContainer.getBoundingClientRect().top + stickyContainer.offsetHeight + scrollPos;
 
-  if (window.innerWidth >= 1240) {
-    window.onscroll = function () {
-      scrollPos = window.scrollY;
-      stickyBlockTop = stickyBlock.getBoundingClientRect().top + scrollPos;
-      stickyBlockBottom = stickyBlock.getBoundingClientRect().top + stickyBlock.offsetHeight + scrollPos;
-      stickyBlockLeft = stickyContainer.getBoundingClientRect().left;
-      stickyBlockWidth = stickyContainer.offsetWidth;
-      stickyTopStop = stickyContainer.getBoundingClientRect().top + scrollPos;
-      stickyBotStop = stickyContainer.getBoundingClientRect().top + stickyContainer.offsetHeight + scrollPos;
-      stickyBlock.style.width = stickyBlockWidth + 'px';
+  if (document.querySelector('.js-sticky-block')) {
+    var scrollPos = window.scrollY;
+    var stickyBlock = document.querySelector('.js-sticky-block');
+    var stickyContainer = document.querySelector('.js-sticky-container');
+    var stickyBlockTop = stickyBlock.getBoundingClientRect().top + scrollPos;
+    var stickyBlockBottom = stickyBlock.getBoundingClientRect().top + stickyBlock.offsetHeight + scrollPos;
+    var stickyBlockLeft = stickyContainer.getBoundingClientRect().left;
+    var stickyBlockWidth = stickyContainer.offsetWidth;
+    var stickyTopStop = stickyContainer.getBoundingClientRect().top + scrollPos;
+    var stickyBotStop = stickyContainer.getBoundingClientRect().top + stickyContainer.offsetHeight + scrollPos;
 
-      if (scrollPos >= stickyTopStop && scrollPos + stickyBlock.offsetHeight <= stickyBotStop) {
-        stickyBlock.classList.add('fixed');
-        stickyBlock.classList.remove('abs');
-      } else if (scrollPos >= stickyTopStop && scrollPos + stickyBlock.offsetHeight >= stickyBotStop) {
-        stickyBlock.classList.add('abs');
-        stickyBlock.classList.remove('fixed');
-      } else {
-        stickyBlock.classList.remove('abs');
-        stickyBlock.classList.remove('fixed');
-      }
-    };
-  } else {
-    stickyBlock.classList.remove('abs');
-    stickyBlock.classList.remove('fixed');
+    if (window.innerWidth >= 1240) {
+      window.onscroll = function () {
+        scrollPos = window.scrollY;
+        stickyBlockTop = stickyBlock.getBoundingClientRect().top + scrollPos;
+        stickyBlockBottom = stickyBlock.getBoundingClientRect().top + stickyBlock.offsetHeight + scrollPos;
+        stickyBlockLeft = stickyContainer.getBoundingClientRect().left;
+        stickyBlockWidth = stickyContainer.offsetWidth;
+        stickyTopStop = stickyContainer.getBoundingClientRect().top + scrollPos;
+        stickyBotStop = stickyContainer.getBoundingClientRect().top + stickyContainer.offsetHeight + scrollPos;
+        stickyBlock.style.width = stickyBlockWidth + 'px';
+
+        if (scrollPos >= stickyTopStop && scrollPos + stickyBlock.offsetHeight <= stickyBotStop) {
+          stickyBlock.classList.add('fixed');
+          stickyBlock.classList.remove('abs');
+        } else if (scrollPos >= stickyTopStop && scrollPos + stickyBlock.offsetHeight >= stickyBotStop) {
+          stickyBlock.classList.add('abs');
+          stickyBlock.classList.remove('fixed');
+        } else {
+          stickyBlock.classList.remove('abs');
+          stickyBlock.classList.remove('fixed');
+        }
+      };
+    } else {
+      stickyBlock.classList.remove('abs');
+      stickyBlock.classList.remove('fixed');
+    }
   }
 })();
 "use strict";
