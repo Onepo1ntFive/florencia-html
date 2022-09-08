@@ -423,6 +423,53 @@
             }
         }
     }
+    &--radio-card {
+        .inputbox__label {
+            padding: 1.5rem;
+            background-color: $color-lightgray2;
+            border: 1px solid $color-lightgray2;
+            border-radius: 0.5rem;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            transition-property: border-color, background-color;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+
+            img {
+                margin-right: 1.3rem;
+            }
+        }
+        
+        .inputbox__title {
+            span {
+                display: block;
+                font-size: 1.3rem;
+                color: $color-font-gray;
+            }
+        }
+
+        .inputbox__input {
+            margin: 0;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            left: auto;
+            z-index: 1;
+            border-radius: 100rem;
+
+            &::before {
+                width: 0.6rem;
+                height: 0.6rem;
+                background: url('../img/circle.svg') 50% 50% no-repeat;
+            }
+        }
+
+        input:checked ~ .inputbox__label {
+            border-color: $color-green;
+            background-color: transparent;
+        }
+    }
 }
 /*----------*/
 .b-rating {

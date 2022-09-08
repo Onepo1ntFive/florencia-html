@@ -6,21 +6,33 @@
         position: relative;
     }
     &__topline {
-        margin: 0 -300rem;
-        padding: 1rem 300rem;
+        margin: 0 -301.5rem;
+        padding: 1rem 300rem 1rem 300rem;
         position: relative;
         display: flex;
         flex-flow: row nowrap;
         background-color: $color-gray-dark;
         color: $color-white;
 
+        @media (min-width: $breakpoint-tablet) {
+            margin-left: -300rem;
+            margin-right: -300rem;
+            padding-right: 320rem;
+        }
+        @media (min-width: $breakpoint-desktop) {
+            padding-right: 323rem;
+        }
+
         p {
             white-space: nowrap;
+            width: 100%;
             font-size: 1.2rem;
+            text-align: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
 
             @media (min-width: $breakpoint-desktop) {
-                width: 100%;
-                text-align: center;
                 font-size: 1.4rem;
             }
         }
@@ -106,6 +118,7 @@
 
         img {
             max-width: 100%;
+            width: 25rem;
         }
     }
     &__info {
