@@ -1,0 +1,71 @@
+$classDatePicker: '.datepicker';
+
+#{$classDatePicker} {
+    font-size: 1.4rem;
+
+    &-header {
+        padding-left: 0.2rem;
+        padding-left: 0.2rem;
+    }
+
+    &-grid {
+        width: 25rem;
+    }
+
+    &-picker {
+        span {
+            border-radius: 0.5rem;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            height: 3.5rem;
+            line-height: 1;
+        }
+    }
+
+    &-cell {
+        &.selected {
+            background-color: $color-green;
+            transition: background-color 0.2s ease-in-out;
+
+            &:hover {
+                background-color: $color-green-h;
+            }
+        }
+    }
+
+    &-controls {
+        .button {
+            height: 3rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .prev-btn,
+        .next-btn {
+            font-size: 2rem;
+            font-weight: 300;
+            background: url('../img/icon-chevron.svg') 50% 50% no-repeat;
+            background-size: 70% auto;
+            opacity: 0.75;
+            transition-property: background, opacity;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+
+            &:hover {
+                opacity: 1;
+                background: url('../img/icon-chevron-g.svg') 50% 50% no-repeat;
+                background-size: 70% auto;
+            }
+        }
+        .prev-btn {
+            transform: rotate(90deg);
+        }
+        .next-btn {
+            transform: rotate(-90deg);
+        }
+    }
+
+    #{$classDatePicker}-grid#{$classDatePicker}-view &-cell {
+        height: 6.25rem;
+    }
+}
