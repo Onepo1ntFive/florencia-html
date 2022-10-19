@@ -103,4 +103,17 @@
         });
     }
 
+    if (document.querySelector('.js-menu-sidebartoggle')) {
+        let menuToggleBtns = document.querySelectorAll('.js-menu-sidebartoggle');
+        let menuToggleContent = null;
+        
+        Array.prototype.forEach.call(menuToggleBtns, function (menuToggleBtn, i) {
+            menuToggleBtn.addEventListener('click', (event) => {
+                menuToggleContent = event.target.parentNode.nextElementSibling;
+                menuToggleBtn.parentNode.classList.toggle('active')
+                slideToggle(menuToggleContent);
+            })
+        });
+    }    
+
 })();

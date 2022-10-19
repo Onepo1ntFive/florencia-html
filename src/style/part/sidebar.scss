@@ -208,7 +208,8 @@ $sidebarClass: '.sidebar';
     }
 }
 // menu
-.sidebar__menu {
+$sidebarMenuClass: ".sidebar__menu";
+#{$sidebarMenuClass} {
     margin-bottom: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -279,15 +280,83 @@ $sidebarClass: '.sidebar';
     &-submenu {
         display: none;
         padding-bottom: 1rem;
-        a {
-            display: block;
-            margin-bottom: 1rem;
-            color: $color-font;
 
-            &.active,
-            &:hover {
-                color: $color-green;
+        li {
+            margin-bottom: 1rem;
+            
+            &#{$sidebarMenuClass} {
+                &-haschild {
+                    & > span {
+                        ins {
+                            position: relative;
+                            width: 2.4rem;
+
+                            &::before,
+                            &::after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                transform-origin: center center;
+                                width: 1.8rem;
+                                height: 0.2rem;
+                                border-radius: 100rem;
+                                background: $color-font;
+                                transition: transform 0.2s ease-in-out;
+                            }
+                            &::before {
+                                transform: translate(-50%, -50%) rotate(0deg);
+                            }
+                            &::after {
+                                transform: translate(-50%, -50%) rotate(90deg);
+                            }
+                        }
+                        &.active {
+                            ins {
+                                &::before {
+                                    transform: translate(-50%, -50%) rotate(-180deg);
+                                }
+                                &::after {
+                                    transform: translate(-50%, -50%) rotate(0deg);
+                                }
+                            }
+                        }
+                    }
+                }
             }
+        }
+
+        span {
+            display: flex;
+            flex-flow: row nowrap;
+
+            a {
+                display: block;
+                color: $color-font;
+                flex: 1 auto;
+    
+                &.active,
+                &:hover {
+                    color: $color-green;
+                }
+            }
+
+         
+        }
+
+        &-1 {
+            padding-left: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            display: none;
+        }
+        &-2 {
+            padding-left: 2rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            display: none;
         }
     }
 }
