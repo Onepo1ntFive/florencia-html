@@ -19619,6 +19619,82 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 "use strict";
 
 (function () {
+  var menuToggleBtn = document.querySelector('.js-menu-toggle');
+  var body = document.querySelector('body');
+  var menuBlock = document.querySelector('.menu__submenu');
+  var hasChildSecondLevel = document.querySelectorAll('.menu__submenu > .menu__haschild');
+  var hasChildThirdLevel = document.querySelectorAll('.menu__submenu-1 > .menu__haschild');
+  var menuSubLevel1All = document.querySelectorAll('.menu__submenu-1');
+  var menuSubLevel2All = document.querySelectorAll('.menu__submenu-2');
+  menuToggleBtn.addEventListener('click', function () {
+    menuToggleBtn.parentNode.classList.toggle('active');
+
+    if (menuBlock.classList.contains('menu__submenu--2') || menuBlock.classList.contains('menu__submenu--3')) {
+      hasChildSecondLevel.forEach(function (el, i) {
+        el.classList.remove('active');
+      });
+      menuSubLevel1All.forEach(function (menuSubLevel1, i) {
+        menuSubLevel1.classList.remove('active');
+      });
+      menuSubLevel2All.forEach(function (menuSubLevel2, i) {
+        menuSubLevel2.classList.remove('active');
+      });
+
+      if (menuBlock.classList.contains('menu__submenu--2')) {
+        menuBlock.classList.remove('menu__submenu--2');
+      }
+
+      if (menuBlock.classList.contains('menu__submenu--3')) {
+        menuBlock.classList.remove('menu__submenu--3');
+      }
+    }
+
+    menuBlock.classList.remove('menu__submenu--2');
+  });
+  hasChildSecondLevel.forEach(function (el, i) {
+    var subMenuBtn = el.querySelector('* > ins');
+    subMenuBtn.addEventListener('click', function (e) {
+      var parentItem = e.target.parentNode.parentNode;
+      var listSubItems = parentItem.querySelector('.menu__submenu-1');
+      hasChildSecondLevel.forEach(function (el, i) {
+        el.classList.remove('active');
+      });
+      hasChildThirdLevel.forEach(function (el, i) {
+        el.classList.remove('active');
+      });
+      menuSubLevel1All.forEach(function (menuSubLevel1, i) {
+        menuSubLevel1.classList.remove('active');
+      });
+      menuSubLevel2All.forEach(function (menuSubLevel2, i) {
+        menuSubLevel2.classList.remove('active');
+      });
+      menuBlock.classList.remove('menu__submenu--3');
+      menuBlock.classList.add('menu__submenu--2');
+      parentItem.classList.add('active');
+      listSubItems.classList.add('active');
+    });
+  });
+  hasChildThirdLevel.forEach(function (el, i) {
+    var subSubMenuBtn = el.querySelector('* > ins');
+    subSubMenuBtn.addEventListener('click', function (e) {
+      var parentItem = e.target.parentNode.parentNode;
+      var listSubSubItems = document.querySelector(".".concat(parentItem.dataset.child));
+      hasChildThirdLevel.forEach(function (el, i) {
+        el.classList.remove('active');
+      });
+      menuSubLevel2All.forEach(function (menuSubLevel2, i) {
+        menuSubLevel2.classList.remove('active');
+      });
+      menuBlock.classList.remove('menu__submenu--2');
+      menuBlock.classList.add('menu__submenu--3');
+      parentItem.classList.add('active');
+      listSubSubItems.classList.add('active');
+    });
+  });
+})();
+"use strict";
+
+(function () {
   var activeSlideIndex = 0;
   var galleryTop = new Swiper('.swiper-container--gallery', {
     spaceBetween: 30,
@@ -20039,6 +20115,18 @@ function readURL(input) {
         menuCollapseContent = event.target.nextElementSibling;
         menuCollapseBtn.classList.toggle('active');
         slideToggle(menuCollapseContent);
+      });
+    });
+  }
+
+  if (document.querySelector('.js-menu-sidebartoggle')) {
+    var menuToggleBtns = document.querySelectorAll('.js-menu-sidebartoggle');
+    var menuToggleContent = null;
+    Array.prototype.forEach.call(menuToggleBtns, function (menuToggleBtn, i) {
+      menuToggleBtn.addEventListener('click', function (event) {
+        menuToggleContent = event.target.parentNode.nextElementSibling;
+        menuToggleBtn.parentNode.classList.toggle('active');
+        slideToggle(menuToggleContent);
       });
     });
   }
