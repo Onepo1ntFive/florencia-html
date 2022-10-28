@@ -28,6 +28,7 @@
             }
         }
         menuBlock.classList.remove('menu__submenu--2');
+        setSubmenuHeight();
     });
 
     hasChildSecondLevel.forEach((el, i) => {
@@ -51,6 +52,7 @@
             menuBlock.classList.add('menu__submenu--2');
             parentItem.classList.add('active');
             listSubItems.classList.add('active');
+            setSubmenuHeight();
         })
 
     });
@@ -70,7 +72,32 @@
             menuBlock.classList.add('menu__submenu--3');
             parentItem.classList.add('active');
             listSubSubItems.classList.add('active');
+            setSubmenuHeight();
         })
 
     });
+
+    let menuLevel1Height = 0;
+    let menuLevel2Height = 0;
+    let menuLevel3Height = 0;
+
+    function setSubmenuHeight() {
+
+        if (document.querySelector('.menu__submenu .menu__submenu-2.active')) {
+            menuLevel3Height = document.querySelector('.menu__submenu .menu__submenu-2.active').getBoundingClientRect().height;
+        } else {
+            menuLevel3Height = 0;
+        }
+        if (document.querySelector('.menu__submenu .menu__submenu-1.active')) {
+            menuLevel2Height = document.querySelector('.menu__submenu .menu__submenu-1.active').getBoundingClientRect().height;
+        } else {
+            menuLevel2Height = 0;
+        }
+        if (document.querySelector('.menu__item.active .menu__submenu') && menuLevel1Height === 0) {
+            menuLevel1Height = document.querySelector('.menu__item.active .menu__submenu').getBoundingClientRect().height;
+        }
+
+        console.log(menuLevel1Height, menuLevel2Height, menuLevel3Height);
+        menuBlock.style.height = `${Math.max(menuLevel1Height, menuLevel2Height, menuLevel3Height)}px`;
+    }
 })();
