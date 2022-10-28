@@ -19650,6 +19650,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
     }
 
     menuBlock.classList.remove('menu__submenu--2');
+    setSubmenuHeight();
   });
   hasChildSecondLevel.forEach(function (el, i) {
     var subMenuBtn = el.querySelector('* > ins');
@@ -19672,6 +19673,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       menuBlock.classList.add('menu__submenu--2');
       parentItem.classList.add('active');
       listSubItems.classList.add('active');
+      setSubmenuHeight();
     });
   });
   hasChildThirdLevel.forEach(function (el, i) {
@@ -19689,8 +19691,33 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
       menuBlock.classList.add('menu__submenu--3');
       parentItem.classList.add('active');
       listSubSubItems.classList.add('active');
+      setSubmenuHeight();
     });
   });
+  var menuLevel1Height = 0;
+  var menuLevel2Height = 0;
+  var menuLevel3Height = 0;
+
+  function setSubmenuHeight() {
+    if (document.querySelector('.menu__submenu .menu__submenu-2.active')) {
+      menuLevel3Height = document.querySelector('.menu__submenu .menu__submenu-2.active').getBoundingClientRect().height;
+    } else {
+      menuLevel3Height = 0;
+    }
+
+    if (document.querySelector('.menu__submenu .menu__submenu-1.active')) {
+      menuLevel2Height = document.querySelector('.menu__submenu .menu__submenu-1.active').getBoundingClientRect().height;
+    } else {
+      menuLevel2Height = 0;
+    }
+
+    if (document.querySelector('.menu__item.active .menu__submenu') && menuLevel1Height === 0) {
+      menuLevel1Height = document.querySelector('.menu__item.active .menu__submenu').getBoundingClientRect().height;
+    }
+
+    console.log(menuLevel1Height, menuLevel2Height, menuLevel3Height);
+    menuBlock.style.height = "".concat(Math.max(menuLevel1Height, menuLevel2Height, menuLevel3Height), "px");
+  }
 })();
 "use strict";
 
